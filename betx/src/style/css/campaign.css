@@ -28,6 +28,10 @@
 .banker .data-block {
   flex: 50% 0 0;
   font-size: 16px;
+  box-sizing: border-box;
+}
+.banker .data-block:nth-child(2n) {
+  padding-left: 50px;
 }
 .banker .data-block:first-child {
   margin-bottom: 30px;
@@ -36,9 +40,11 @@
   margin-bottom: 15px;
   color: #C6B073;
   font-weight: normal;
+  font-size: 14px ;
 }
 .banker .data-block span {
   color: #fff;
+  font-size: 14px ;
 }
 .banker .data-block .alarm {
   font-size: 24px;
@@ -51,9 +57,86 @@
   height: 30px;
   margin-right: 40px;
 }
+.banker .data-inner-block {
+  padding: 10px 20px;
+  border: 1px solid #E4CB81;
+  border-radius: 20px;
+  background: linear-gradient(32deg, #323232, #4c4d4e);
+}
+.banker .data-inner-block .inner-icon {
+  width: 100px;
+}
+.banker .data-inner-block .inner-icon img {
+  display: inline-block;
+}
+.banker .data-inner-block .inner-icon span {
+  font-size: 14px;
+  color: #A8A8A8;
+  margin-left: 5px;
+}
+.banker .data-inner-block .row {
+  display: flex;
+  align-items: center;
+}
+.banker .data-inner-block .row:not(:first-child) {
+  margin-top: 30px;
+}
+.banker .data-inner-block .row .data-count {
+  display: inline-block;
+  color: #CECECE;
+  font-size: 30px;
+  font-weight: bold;
+}
 .banker .income {
   width: 40%;
   box-sizing: border-box;
+  padding: 30px;
   border: 1px solid #E4CB81;
   border-radius: 20px;
+}
+.banker .income h5 {
+  font-size: 14px;
+  color: #C6B073;
+  margin-bottom: 45px;
+}
+.banker .income .income_block {
+  display: flex;
+}
+.banker .income .income_block .data-inner-block {
+  margin-right: 30px ;
+  flex: 300px 0 1;
+}
+.banker .income .income_block .draw_btn {
+  width: 45px;
+  height: 158px;
+  background: #e6c36b;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 3em;
+}
+.illustrate h4 {
+  color: #E6C36B;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.illustrate .illustrate_block {
+  background: linear-gradient(32deg, #323232, #4c4d4e);
+  border: 1px solid #e4cb81;
+  opacity: 0.7;
+  border-radius: 20px;
+  padding: 25px 35px;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1.5em;
+}
+.illustrate .illustrate_block .illu_item {
+  margin-bottom: 20px;
 }

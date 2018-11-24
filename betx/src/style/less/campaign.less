@@ -32,6 +32,10 @@
   .data-block{
     flex:50% 0 0;
     font-size: 16px;
+    box-sizing: border-box;
+    &:nth-child(2n){
+      padding-left: 50px;
+    }
     &:first-child{
       margin-bottom: 30px;
     }
@@ -39,9 +43,11 @@
       margin-bottom: 15px;
       color:#C6B073;
       font-weight: normal;
+      font-size:14px ;
     }
     span{
       color: #fff;
+      font-size:14px ;
     }
     .alarm{
       font-size: 24px;
@@ -56,11 +62,88 @@
     }
   }
   .data-inner-block{
-
+    padding:10px 20px;
+    border:1px solid #E4CB81;
+    border-radius:20px;
+    background:linear-gradient(32deg,rgba(50,50,50,1),rgba(76,77,78,1));
+      .inner-icon{
+        width:100px;
+        img{
+          display: inline-block;
+        }
+        span{
+          font-size: 14px;
+          color: #A8A8A8;
+          margin-left: 5px;
+        }
+      }
+      .row{
+        display: flex;
+        align-items: center;
+        &:not(:first-child){
+          margin-top: 30px;
+        }
+        .data-count{
+          display: inline-block;
+          color: #CECECE;
+          font-size: 30px;
+          font-weight: bold;
+        }
+      }
   }
   .income{
     width:40%;
     box-sizing: border-box;
+    padding:30px;
     .block-border;
+    h5{
+      font-size:14px;
+      color: #C6B073;
+      margin-bottom: 45px;
+    }
+    .income_block{
+      display: flex;
+      .data-inner-block{
+         margin-right:30px ;
+        flex:300px 0 1;
+      }
+      .draw_btn{
+        width:45px;
+        height:158px;
+        background:rgba(230,195,107,1);
+        border-radius:14px;
+        border:none;
+        outline:none;
+        color: #000;
+        font-size: 16px;
+        font-weight:bold;
+        color:rgba(51,51,51,1);
+        line-height:3em;
+      }
+    }
+  }
+}
+
+.illustrate{
+  h4{
+    color: #E6C36B;
+    font-size:24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .illustrate_block{
+    background:linear-gradient(32deg,rgba(50,50,50,1),rgba(76,77,78,1));
+    border:1px solid rgba(228,203,129,1);
+    opacity:0.7;
+    border-radius:20px;
+    padding:25px 35px;
+    font-size:15px;
+    color:rgba(255,255,255,1);
+    line-height:1.5em;
+    .illu_item{
+      margin-bottom: 20px;
+    }
   }
 }

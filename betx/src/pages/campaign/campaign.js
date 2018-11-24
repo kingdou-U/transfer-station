@@ -1,9 +1,11 @@
 import React from 'react';
+import Illustrate from './component/illustrate'
 
 import "../../style/css/campaign.css";
 import alarm from '../../assets/imgs/alarm.png';
 import EOS from '../../assets/imgs/EOS.png';
 import logoGrey from '../../assets/imgs/logo-grey.png';
+
 
 class Campaign extends React.Component {
     constructor() {
@@ -36,19 +38,19 @@ class Campaign extends React.Component {
                         <div className="data-block">
                             <h5 className="data-title">本轮累计收益</h5>
                             <div className="data-inner-block">
-                                <div>
+                                <div className="row">
                                     <div className="inner-icon">
-                                        <img src={EOS} alt=""/>
+                                        <img className="EOS" src={EOS} alt=""/>
                                         <span>EOS</span>
                                     </div>
-                                    <span>0.1234</span>
+                                    <span className="data-count">0.1234</span>
                                 </div>
-                                <div>
+                                <div className="row">
                                     <div className="inner-icon">
-                                        <img src={logoGrey} alt=""/>
+                                        <img className="betx"  src={logoGrey} alt=""/>
                                         <span>BETX</span>
                                     </div>
-                                    <span>0.6666</span>
+                                    <span className="data-count">0.6666</span>
                                 </div>
                             </div>
                         </div>
@@ -63,27 +65,29 @@ class Campaign extends React.Component {
                     </div>
                     <div className="income">
                         <h5>我的超级庄家收入</h5>
-                        <div>
+                        <div className="income_block">
                             <div className="data-inner-block">
-                                <div>
+                                <div className="row">
                                     <div className="inner-icon">
-                                        <img src={EOS} alt=""/>
+                                        <img className="EOS" src={EOS} alt=""/>
                                         <span>EOS</span>
                                     </div>
-                                    <span>0.1234</span>
+                                    <span className="data-count">0.1234</span>
                                 </div>
-                                <div>
+                                <div className="row">
                                     <div className="inner-icon">
-                                        <img src={logoGrey} alt=""/>
+                                        <img className="betx" src={logoGrey} alt=""/>
                                         <span>BETX</span>
                                     </div>
-                                    <span>0.6666</span>
+                                    <span className="data-count">0.6666</span>
                                 </div>
                             </div>
-                            <button className="draw_btn">领取</button>
+                            <button className="draw_btn">领<br/>取</button>
                         </div>
                     </div>
                 </div>
+
+                <Illustrate></Illustrate>
             </div>
         )
     }
