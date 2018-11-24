@@ -1,0 +1,59 @@
+/*宏*/
+.block-border {
+  border: 1px solid #E4CB81;
+  border-radius: 20px;
+}
+.section {
+  margin-top: 50px;
+}
+.page-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #cecece;
+  line-height: 29px;
+}
+.banker {
+  display: flex;
+  justify-content: space-between;
+}
+.banker .real_time_data {
+  width: 56.8%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #E4CB81;
+  border-radius: 20px;
+}
+.banker .data-block {
+  flex: 50% 0 0;
+  font-size: 16px;
+}
+.banker .data-block:first-child {
+  margin-bottom: 30px;
+}
+.banker .data-block .data-title {
+  margin-bottom: 15px;
+  color: #C6B073;
+  font-weight: normal;
+}
+.banker .data-block span {
+  color: #fff;
+}
+.banker .data-block .alarm {
+  font-size: 24px;
+  font-weight: bold;
+}
+.banker .data-block .alarm img {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+}
+.banker .income {
+  width: 40%;
+  box-sizing: border-box;
+  border: 1px solid #E4CB81;
+  border-radius: 20px;
+}

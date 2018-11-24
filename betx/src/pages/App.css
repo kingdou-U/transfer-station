@@ -1,11 +1,121 @@
-html,body{
-  padding:0;
-  margin:0;
+html,
+body {
+  padding: 0;
+  margin: 0;
   min-height: 100%;
 }
-ul,li{
+div,
+p,
+ul,
+li,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
   list-style: none;
 }
-.App{
-
+a,
+a:visited,
+a:active,
+a:link,
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-image: url('../assets/imgs/main-bg.png');
+  background-repeat: repeat;
+}
+.App {
+  padding-top: 100px;
+  min-height: 100%;
+  font-family: MicrosoftYaHeiLight;
+}
+.App-header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #2D2D2E;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px;
+}
+.App-header .logo {
+  width: 70px;
+  height: 62px;
+}
+.App-header .header-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.App-header .nav-lists {
+  padding-left: 30px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.App-header .nav-lists li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 5%;
+}
+.App-header .nav-lists li a {
+  color: #B4A68F;
+}
+.App-header .header-control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #B4A68F;
+  font-size: 18px;
+}
+.App-header .header-control .login {
+  color: #B4A68F;
+  margin-right: 20px;
+}
+.App-header .header-control .i18n span {
+  display: inline-block;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.App-header .header-control .i18n span.current {
+  border: 1px solid #FDD672;
+  border-radius: 9px;
+}
+.App-view {
+  width: 1440px;
+  margin: 30px auto;
 }
