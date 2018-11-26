@@ -8,9 +8,10 @@
 }
 
 .section{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .page-title{
+  margin-top: 45px;
   font-size:30px;
   font-weight:300;
   color:rgba(206,206,206,1);
@@ -30,8 +31,9 @@
 
   }
   .data-block{
+    font-size:14px ;
+    color: #fff;
     flex:50% 0 0;
-    font-size: 16px;
     box-sizing: border-box;
     &:nth-child(2n){
       padding-left: 50px;
@@ -45,10 +47,6 @@
       font-weight: normal;
       font-size:14px ;
     }
-    span{
-      color: #fff;
-      font-size:14px ;
-    }
     .alarm{
       font-size: 24px;
       font-weight: bold;
@@ -60,23 +58,31 @@
         margin-right:40px;
       }
     }
+    .data-block-row{
+      display: flex;
+      align-items: flex-end;
+      font-size: 24px;
+      color: #CECECE;
+      font-weight:bold;
+    }
+  }
+  .inner-icon{
+    width:100px;
+    img{
+      display: inline-block;
+    }
+    span{
+      font-size: 14px;
+      color: #A8A8A8;
+      margin-left: 5px;
+    }
   }
   .data-inner-block{
     padding:10px 20px;
     border:1px solid #E4CB81;
     border-radius:20px;
     background:linear-gradient(32deg,rgba(50,50,50,1),rgba(76,77,78,1));
-      .inner-icon{
-        width:100px;
-        img{
-          display: inline-block;
-        }
-        span{
-          font-size: 14px;
-          color: #A8A8A8;
-          margin-left: 5px;
-        }
-      }
+
       .row{
         display: flex;
         align-items: center;
@@ -108,6 +114,7 @@
         flex:300px 0 1;
       }
       .draw_btn{
+        cursor:pointer;
         width:45px;
         height:158px;
         background:rgba(230,195,107,1);
@@ -134,16 +141,43 @@
     margin-top: 20px;
   }
   .illustrate_block{
+    color: #fff;
     background:linear-gradient(32deg,rgba(50,50,50,1),rgba(76,77,78,1));
     border:1px solid rgba(228,203,129,1);
     opacity:0.7;
     border-radius:20px;
     padding:25px 35px;
     font-size:15px;
-    color:rgba(255,255,255,1);
     line-height:1.5em;
     .illu_item{
       margin-bottom: 20px;
     }
   }
+}
+
+.betx-block{
+  margin-top: 40px;
+  .block-header{
+    border-bottom: 2px solid #D5BD7A;
+    padding: 20px 0;
+    display: flex;
+    .block-title{
+      font-size:24px;
+      color: #C6B073;
+    }
+    .alarm{
+      margin-left: 35px;
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+      img{
+        display: block;
+        float: left;
+        width:30px;
+        height:30px;
+        margin-right: 15px;
+      }
+    }
+  }
+
 }

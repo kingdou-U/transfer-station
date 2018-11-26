@@ -6,6 +6,7 @@ import alarm from '../../assets/imgs/alarm.png';
 import EOS from '../../assets/imgs/EOS.png';
 import logoGrey from '../../assets/imgs/logo-grey.png';
 
+import BetxInput from '../components/betx-input/betx-input'
 
 class Campaign extends React.Component {
     constructor() {
@@ -21,6 +22,7 @@ class Campaign extends React.Component {
 
         return (
             <div className="campaign">
+                {/*庄家数据*/}
                 <h3 className="page-title">超级庄家</h3>
                 <div className="banker section">
                     <div className="real_time_data">
@@ -56,10 +58,15 @@ class Campaign extends React.Component {
                         </div>
                         <div className="data-block">
                             <h5 className="data-title">拍卖价格</h5>
-                            <div className="price">
-                                <img src={logoGrey} className="price_logo" alt=""/>
+                            <div className="data-block-row">
+                                <div className="inner-icon">
+                                    <img src={logoGrey} className="betx" alt=""/>
+                                    <span>BETX</span>
+                                </div>
                                 <span>1.0324</span>
                             </div>
+
+
                         </div>
 
                     </div>
@@ -86,6 +93,21 @@ class Campaign extends React.Component {
                         </div>
                     </div>
                 </div>
+                {/*庄家数据*/}
+                {/*下轮*/}
+                <div className="betx-block">
+                    <div className="block-header">
+                        <h4 className="block-title">下轮超级庄家权益竞选</h4>
+                        <div className="alarm">
+                            <img src={alarm} className="alarm_logo" alt=""/>
+                            <span>00,39,16</span>
+                        </div>
+                    </div>
+                    <div className="block-content">
+                        
+                    </div>
+                </div>
+
 
                 <Illustrate></Illustrate>
             </div>
