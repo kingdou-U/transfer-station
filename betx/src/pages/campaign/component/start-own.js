@@ -47,7 +47,7 @@ class Test extends React.Component {
                                 <h5 className="run-title">竞选加注</h5>
                                 <div>
                                     <BetxInput></BetxInput>
-                                    <div className="run-last">
+                                    <div className="run-last" style={{width:'351px'}}>
                                         <span>可用</span>
                                         <span>5000BETX</span>
                                     </div>
@@ -62,9 +62,7 @@ class Test extends React.Component {
                                 </div>
                                 <div>
                                     <h5 className="run-title">费用</h5>
-                                    <div style={{width:'100px'}}>
-                                        <BetxInput></BetxInput>
-                                    </div>
+                                    <BetxInput></BetxInput>
                                     <div className="run-last">
                                         <span>可用</span>
                                         <span>5000BETX</span>
