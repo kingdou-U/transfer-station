@@ -82,7 +82,7 @@ class Next extends React.Component {
                                     </div>
                                     <div className="run-assistance">
                                         <h5 className="run-title">竞选助力</h5>
-                                        <BetxInput></BetxInput>
+                                        <BetxInput callback={()=>console.log('助力回调')}></BetxInput>
                                         <div className="run-last">
                                             <span>可用</span>
                                             <span>5000BETX</span>

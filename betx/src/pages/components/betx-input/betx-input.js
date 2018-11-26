@@ -9,7 +9,7 @@ class Input extends React.Component {
             <div className="betx-input-item">
                 <img className="input-logo" src={logoGrey} alt=""/>
                 <input type="text"/>
-                <button>{this.props.btn}</button>
+                <button onClick={()=>this.props.callback()}>{this.props.btn}</button>
             </div>)
     }
 }

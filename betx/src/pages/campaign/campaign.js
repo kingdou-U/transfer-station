@@ -6,7 +6,7 @@ import alarm from '../../assets/imgs/alarm.png';
 import EOS from '../../assets/imgs/EOS.png';
 import logoGrey from '../../assets/imgs/logo-grey.png';
 
-import BetxTable from '../components/betx-table/betx-table'
+// import BetxTable from '../components/betx-table/betx-table'
 import BetxPage from '../components/betx-page/betx-page'
 import RunFor from './component/run-for';
 import StartOwn from './component/start-own';
@@ -21,6 +21,9 @@ class Campaign extends React.Component {
     }
     componentDidMount() {
 
+    }
+    runFor(){
+        console.log('竞选方法')
     }
     render() {
 
@@ -144,6 +147,7 @@ class Campaign extends React.Component {
                     <div className="block-content">
                         <RunFor
                             title="竞选出价" btn="竞选" last={5000}
+                            callback={this.runFor.bind(this)}
                         ></RunFor>
                     </div>
                 </div>

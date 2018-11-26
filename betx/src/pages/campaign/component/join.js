@@ -81,7 +81,7 @@ class Join extends React.Component {
                         )
                     })}
                     <tr ref="expand" style={this.state.active===-1?{display:'none'}:{}}>
-                        <td colSpan="6">
+                        <td colSpan="8">
                             <div className="betx-table-expand">
                                 <div className="run-for">
                                     <div className="run-declaration">
@@ -90,7 +90,7 @@ class Join extends React.Component {
                                     </div>
                                     <div className="run-assistance">
                                         <h5 className="run-title">竞选助力</h5>
-                                        <BetxInput></BetxInput>
+                                        <BetxInput callback={()=>console.log('助力回调')}></BetxInput>
                                         <div className="run-last">
                                             <span>可用</span>
                                             <span>5000BETX</span>
