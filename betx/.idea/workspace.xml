@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/pages/campaign/campaign.js" line="97" />
+    <bookmark url="file://$PROJECT_DIR$/src/pages/campaign/campaign.js" line="98" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dd10b66-ac99-4b06-bf04-2b1f231ad246" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/components/betx-page/betx-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/components/betx-page/betx-page.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/components/betx-page/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/components/betx-page/right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/campaign/campaign.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/campaign/campaign.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/css/campaign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/css/campaign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/less/campaign.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/less/campaign.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,26 +37,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="837" />
-          <entry key="less" value="1065" />
+          <entry key="js" value="1362" />
+          <entry key="less" value="1772" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="837" />
-          <entry key="Less" value="1065" />
+          <entry key="JavaScript" value="1362" />
+          <entry key="Less" value="1772" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="5" />
-          <entry key="less" value="5" />
+          <entry key="js" value="6" />
+          <entry key="less" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="5" />
-          <entry key="Less" value="4" />
+          <entry key="JavaScript" value="6" />
+          <entry key="Less" value="9" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -57,10 +67,19 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="18">
+                  <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/campaign/campaign.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="496">
-                  <caret line="107" selection-start-line="107" selection-end-line="107" />
+                <state relative-caret-position="280">
+                  <caret line="118" selection-start-line="118" selection-end-line="118" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                     <element signature="e#557#3945#0" />
@@ -70,19 +89,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/App.less">
+            <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="676">
-                  <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+                <state relative-caret-position="936">
+                  <caret line="52" column="79" lean-forward="true" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/components/betx-page/betx-page.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="648">
-                  <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+                <state relative-caret-position="360">
+                  <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -95,10 +117,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less">
+            <entry file="file://$PROJECT_DIR$/src/pages/components/betx-page/betx-page.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+                <state relative-caret-position="180">
+                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -106,8 +128,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/style/less/campaign.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="653">
-                  <caret line="182" column="21" selection-start-line="182" selection-start-column="21" selection-end-line="182" selection-end-column="21" />
+                <state relative-caret-position="419">
+                  <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/App.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="658">
+                  <caret line="118" column="15" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -150,11 +181,13 @@
         <option value="$PROJECT_DIR$/src/pages/components/betx-table.js" />
         <option value="$PROJECT_DIR$/src/pages/components/betx-input/betx-input.js" />
         <option value="$PROJECT_DIR$/src/pages/components/betx-input/betx-input.less" />
-        <option value="$PROJECT_DIR$/src/pages/campaign/campaign.js" />
-        <option value="$PROJECT_DIR$/src/style/less/campaign.less" />
-        <option value="$PROJECT_DIR$/src/pages/App.less" />
-        <option value="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less" />
         <option value="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js" />
+        <option value="$PROJECT_DIR$/src/style/less/campaign.less" />
+        <option value="$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less" />
+        <option value="$PROJECT_DIR$/src/pages/App.less" />
+        <option value="$PROJECT_DIR$/src/pages/components/betx-page/betx-page.js" />
+        <option value="$PROJECT_DIR$/src/pages/components/betx-page/betx-page.less" />
+        <option value="$PROJECT_DIR$/src/pages/campaign/campaign.js" />
       </list>
     </option>
   </component>
@@ -175,8 +208,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="883" />
-    <option name="y" value="96" />
+    <option name="x" value="393" />
+    <option name="y" value="42" />
     <option name="width" value="1901" />
     <option name="height" value="1014" />
   </component>
@@ -260,6 +293,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="betx-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="betx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="betx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="betx-table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,6 +356,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1-workspace\transfer-station\betx\src\pages\components\betx-page" />
       <recent name="D:\1-workspace\transfer-station\betx\src\pages\components\betx-table" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -345,7 +387,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543065545432</updated>
       <workItem from="1543065550007" duration="12607000" />
-      <workItem from="1543212189433" duration="7110000" />
+      <workItem from="1543212189433" duration="9136000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1543065614494</created>
@@ -358,10 +400,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19717000" />
+    <option name="totallyTimeSpent" value="21743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="248" y="25" width="1901" height="1014" extended-state="0" />
+    <frame x="517" y="44" width="1901" height="1014" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1825525" />
@@ -505,44 +547,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/less/campaign.less">
+    <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="182" column="21" selection-start-line="182" selection-start-column="21" selection-end-line="182" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/App.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        <state relative-caret-position="936">
+          <caret line="52" column="79" lean-forward="true" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="18">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/less/campaign.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/App.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="118" column="15" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/betx-page/betx-page.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/betx-page/betx-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/campaign/campaign.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        <state relative-caret-position="280">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#557#3945#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/betx-table/betx-table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

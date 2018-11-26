@@ -8,6 +8,7 @@ import logoGrey from '../../assets/imgs/logo-grey.png';
 
 import BetxInput from '../components/betx-input/betx-input'
 import BetxTable from '../components/betx-table/betx-table'
+import BetxPage from '../components/betx-page/betx-page'
 
 class Campaign extends React.Component {
     constructor() {
@@ -105,12 +106,47 @@ class Campaign extends React.Component {
                         </div>
                     </div>
                     <div className="block-content">
-
-                        <BetxTable></BetxTable>
+                        <div className="block-bg-content">
+                            <BetxTable></BetxTable>
+                            <BetxPage></BetxPage>
+                        </div>
                     </div>
                 </div>
-
-
+                {/*我参与*/}
+                <div className="betx-block">
+                    <div className="block-header">
+                        <h4 className="block-title">我参与的超级庄家竞选</h4>
+                    </div>
+                    <div className="block-content">
+                        <div className="block-bg-content">
+                            <BetxTable></BetxTable>
+                        </div>
+                    </div>
+                </div>
+                {/*我发起*/}
+                <div className="betx-block">
+                    <div className="block-header">
+                        <h4 className="block-title">我发起的竞选</h4>
+                    </div>
+                    <div className="block-content">
+                        <div className="block-bg-content">
+                            <BetxTable></BetxTable>
+                            <BetxPage></BetxPage>
+                        </div>
+                    </div>
+                </div>
+                {/*发起竞选*/}
+                <div className="betx-block">
+                    <div className="block-header">
+                        <h4 className="block-title">发起竞选</h4>
+                    </div>
+                    <div className="block-content">
+                        <div className="block-bg-content">
+                            <BetxTable></BetxTable>
+                            <BetxPage></BetxPage>
+                        </div>
+                    </div>
+                </div>
                 <Illustrate></Illustrate>
             </div>
         )

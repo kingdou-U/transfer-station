@@ -1,6 +1,8 @@
 import React from 'react';
 import right from './right.png';
 import './betx-table.css';
+
+import BetxInput from '../betx-input/betx-input';
 class table extends React.Component {
     render() {
         return (
@@ -47,8 +49,19 @@ class table extends React.Component {
                             <td colSpan="6">
                                 <div className="betx-table-expand">
                                     <div className="run-for">
-                                        <div className="run-declaration"></div>
-                                        <div className="run-assistance"></div>
+                                        <div className="run-declaration">
+                                            <h5 className="run-title">竞选宣言</h5>
+                                            <textarea className="betx-textarea">
+                                            </textarea>
+                                        </div>
+                                        <div className="run-assistance">
+                                            <h5 className="run-title">竞选助力</h5>
+                                            <BetxInput></BetxInput>
+                                            <div className="run-last">
+                                                <span>可用</span>
+                                                <span>5000BETX</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
