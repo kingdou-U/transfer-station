@@ -1,0 +1,48 @@
+.betx-input-item {
+  width: 351px;
+  height: 42px;
+  border: 2px solid #d5be7a;
+  border-radius: 10px;
+  padding: 6px 15px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.betx-input-item button {
+  width: 67px;
+  height: 23px;
+  background: #e6c36b;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.betx-input-item button:active {
+  position: relative;
+  top: 1px;
+}
+.betx-input-item .input-logo {
+  width: 30px;
+  height: 27px;
+}
+.betx-input-item input {
+  padding: 0 10px;
+  -webkit-box-flex: 1 ;
+      -ms-flex: 1 ;
+          flex: 1 ;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  display: block;
+}
