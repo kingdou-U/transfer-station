@@ -7,6 +7,7 @@ import EOS from '../../assets/imgs/EOS.png';
 import logoGrey from '../../assets/imgs/logo-grey.png';
 
 import BetxInput from '../components/betx-input/betx-input'
+import BetxTable from '../components/betx-table/betx-table'
 
 class Campaign extends React.Component {
     constructor() {
@@ -104,7 +105,8 @@ class Campaign extends React.Component {
                         </div>
                     </div>
                     <div className="block-content">
-                        
+
+                        <BetxTable></BetxTable>
                     </div>
                 </div>
 
