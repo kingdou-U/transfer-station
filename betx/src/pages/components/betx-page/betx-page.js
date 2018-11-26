@@ -1,8 +1,5 @@
 import React from 'react';
 
-import right from './right.png';
-import left from './left.png';
-
 import './betx-page.css';
 
 class Test extends React.Component {

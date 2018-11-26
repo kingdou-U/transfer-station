@@ -6,10 +6,10 @@ import alarm from '../../assets/imgs/alarm.png';
 import EOS from '../../assets/imgs/EOS.png';
 import logoGrey from '../../assets/imgs/logo-grey.png';
 
-import BetxInput from '../components/betx-input/betx-input'
 import BetxTable from '../components/betx-table/betx-table'
 import BetxPage from '../components/betx-page/betx-page'
 import RunFor from './component/run-for';
+import StartOwn from './component/start-own';
 
 class Campaign extends React.Component {
     constructor() {
@@ -131,7 +131,7 @@ class Campaign extends React.Component {
                     </div>
                     <div className="block-content">
                         <div className="block-bg-content">
-
+                            <StartOwn></StartOwn>
                         </div>
                     </div>
                 </div>

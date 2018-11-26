@@ -212,6 +212,75 @@
   border-radius: 20px;
   padding: 15px;
 }
+.start-panel {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.start-panel .betx-textarea.no-border {
+  border: none;
+}
+.start-panel .run-declaration {
+  width: 500px;
+  border: 2px solid #d5be7a;
+  border-radius: 10px;
+  margin-right: 60px;
+  overflow: hidden;
+}
+.start-panel .run-declaration .declar-title {
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #272727;
+}
+.start-panel .run-declaration .declar-title .letter-count {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.start-panel .run-declaration .betx-textarea {
+  width: 100%;
+  height: 160px;
+}
+.start-panel .run-data {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.start-panel .run-data .run-title {
+  margin-bottom: 10px;
+}
+.start-panel .run-data .run-last {
+  color: #FED575;
+  font-size: 14px;
+  text-align: right;
+  padding: 5px 0;
+}
+.start-panel .run-data .run-last > span:first-child {
+  margin-right: 15px;
+}
+.start-panel .run-data .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.start-panel .run-data .flex-box .buy-input {
+  border: 2px solid #D5BE7A;
+  border-radius: 10px;
+  background: transparent;
+  height: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #D5BE7A;
+  outline: none;
+  padding: 0 10px;
+  margin-right: 10px;
+}
 .run-for {
   display: -webkit-box;
   display: -ms-flexbox;
