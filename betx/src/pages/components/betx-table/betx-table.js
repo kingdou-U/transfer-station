@@ -1,6 +1,6 @@
 import React from 'react';
+import right from './right.png';
 import './betx-table.css';
-
 class table extends React.Component {
     render() {
         return (
@@ -24,7 +24,10 @@ class table extends React.Component {
                             <td>100/1000</td>
                             <td>500</td>
                             <td>
-                                <button className="betx-btn betx-btn-sm">已满</button>
+                                <div className="betx-table-control">
+                                    <button className="betx-btn betx-btn-sm">已满</button>
+                                    <img className="expand-ico" src={right} alt=""/>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -34,7 +37,20 @@ class table extends React.Component {
                             <td>100/1000</td>
                             <td>500</td>
                             <td>
-                                <button className="betx-btn betx-btn-sm">助力</button>
+                                <div className="betx-table-control">
+                                    <button className="betx-btn betx-btn-sm">已满</button>
+                                    <img className="expand-ico" src={right} alt=""/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colSpan="6">
+                                <div className="betx-table-expand">
+                                    <div className="run-for">
+                                        <div className="run-declaration"></div>
+                                        <div className="run-assistance"></div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
