@@ -3,6 +3,12 @@ import '../../components/betx-table/betx-table.css';
 import BetxInput from "../../components/betx-input/betx-input";
 
 class Test extends React.Component {
+    refuel(){
+        console.log('加注方法')
+    }
+    buy(){
+        console.log('购买')
+    }
     render() {
         return (
             <div className="start-own">
@@ -46,7 +52,7 @@ class Test extends React.Component {
                             <div className="run-assistance">
                                 <h5 className="run-title">竞选加注</h5>
                                 <div>
-                                    <BetxInput></BetxInput>
+                                    <BetxInput btn="加注" callback={this.refuel.bind(this)}></BetxInput>
                                     <div className="run-last" style={{width:'351px'}}>
                                         <span>可用</span>
                                         <span>5000BETX</span>
@@ -62,7 +68,7 @@ class Test extends React.Component {
                                 </div>
                                 <div>
                                     <h5 className="run-title">费用</h5>
-                                    <BetxInput></BetxInput>
+                                    <BetxInput btn="购买"  callback={this.buy.bind(this)}></BetxInput>
                                     <div className="run-last">
                                         <span>可用</span>
                                         <span>5000BETX</span>

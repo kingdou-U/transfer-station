@@ -17,7 +17,7 @@ class Run extends React.Component {
                     </div>
                     <div className="run-assistance">
                         <h5 className="run-title">{this.props.title}</h5>
-                        <BetxInput btn={this.props.btn}></BetxInput>
+                        <BetxInput btn={this.props.btn} callback={this.props.callback}></BetxInput>
                         <div className="run-last">
                             <span>可用</span>
                             <span>{this.props.last}BETX</span>
