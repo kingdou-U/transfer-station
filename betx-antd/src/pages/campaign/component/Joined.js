@@ -1,33 +1,6 @@
 import React from 'react';
-import {Table,Input,Tag } from 'antd';
-
-import greyLogo from '../../../assets/imgs/logo-grey.png';
-const { TextArea } = Input;
-
-function Abet(record){
-    const expand = (<div className="betx-table-expand">
-        <div className="run-for">
-            <div className="run-declaration">
-                <h5 className="run-title">竞选宣言</h5>
-                <TextArea rows={4} className="betx-textarea"></TextArea>
-            </div>
-            <div className="run-assistance">
-                <h5 className="run-title">竞选助力</h5>
-                <div className="betx-input-item">
-                    <img className="input-logo" src={greyLogo} alt=""/>
-                    <input type="text"/>
-                    <button>助力</button>
-                </div>
-
-                <div className="run-last">
-                    <span>可用</span>
-                    <span>5000BETX</span>
-                </div>
-            </div>
-        </div>
-    </div>)
-    return expand;
-}
+import {Table,Tag } from 'antd';
+import Abet from '../../appComponents/abet';
 
 class Joined extends React.Component {
     render() {
@@ -61,7 +34,7 @@ class Joined extends React.Component {
                         <Table
                             rowKey={record=>record.key}
                             columns={columns}
-                            expandedRowRender={Abet}
+                            expandedRowRender={record=><Abet row={record}/>}
                             dataSource={data}
                         />
                     </div>

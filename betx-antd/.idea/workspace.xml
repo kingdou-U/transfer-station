@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f5c03a-38f1-4115-880b-1db0a498b514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Tim.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/EOS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/alarm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/logo-grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/main-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/App.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/antd-custom.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/campaign.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/campaign.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/component/Joined.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/component/banker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/component/illustrate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/component/next.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/component/run-for.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/campaign/component/start-own.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/betx-table.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../betx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../betx/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/appComponents/abet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/campaign/component/Joined.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/campaign/component/Joined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/campaign/component/next.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/campaign/component/next.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,7 +27,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="js" value="19" />
+          <entry key="js" value="21" />
           <entry key="json" value="1" />
           <entry key="less" value="11" />
         </counts>
@@ -57,7 +36,7 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="19" />
+          <entry key="JavaScript" value="21" />
           <entry key="Less" value="11" />
         </counts>
       </usages-collector>
@@ -68,13 +47,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1204" />
+          <entry key="js" value="1445" />
           <entry key="less" value="775" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1204" />
+          <entry key="JavaScript" value="1445" />
           <entry key="Less" value="775" />
         </counts>
       </usages-collector>
@@ -111,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/Joined.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="20" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="20" />
+                <state relative-caret-position="36">
+                  <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -121,10 +100,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/run-for.js">
+            <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/next.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="25" column="59" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="59" />
+                <state relative-caret-position="18">
+                  <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/appComponents/abet.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="522">
+                  <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -181,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/pages/campaign/component/banker.js" />
         <option value="$PROJECT_DIR$/src/pages/App.js" />
         <option value="$PROJECT_DIR$/src/pages/appComponents/betx-table/betx-table.less" />
-        <option value="$PROJECT_DIR$/src/pages/campaign/component/next.js" />
         <option value="$PROJECT_DIR$/src/pages/antd-custom.less" />
         <option value="$PROJECT_DIR$/src/pages/appComponents/betx-input/betx-input.less" />
         <option value="$PROJECT_DIR$/src/common/common.less" />
@@ -189,10 +176,12 @@
         <option value="$PROJECT_DIR$/src/pages/campaign/campaign.less" />
         <option value="$PROJECT_DIR$/src/pages/campaign/component/start-own.js" />
         <option value="$PROJECT_DIR$/src/styles/betx-table.less" />
-        <option value="$PROJECT_DIR$/src/pages/campaign/component/Joined.js" />
         <option value="$PROJECT_DIR$/src/pages/campaign/campaign.js" />
         <option value="$PROJECT_DIR$/src/pages/campaign/component/run-for.js" />
         <option value="$PROJECT_DIR$/src/pages/App.less" />
+        <option value="$PROJECT_DIR$/src/pages/appComponents/abet.js" />
+        <option value="$PROJECT_DIR$/src/pages/campaign/component/Joined.js" />
+        <option value="$PROJECT_DIR$/src/pages/campaign/component/next.js" />
       </list>
     </option>
   </component>
@@ -320,12 +309,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543292350553</updated>
-      <workItem from="1543292352793" duration="12870000" />
+      <workItem from="1543292352793" duration="13395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12870000" />
+    <option name="totallyTimeSpent" value="13395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="244" y="27" width="1901" height="1014" extended-state="0" />
@@ -333,7 +322,7 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18793753" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18793753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
@@ -408,16 +397,6 @@
     <entry file="file://$PROJECT_DIR$/src/pages/appComponents/betx-input/betx-input.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/start-own.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/appComponents/betx-page/betx-page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -455,26 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/next.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/Joined.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -495,16 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/run-for.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/campaign/campaign.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -516,6 +465,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
           <caret line="159" column="14" lean-forward="true" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/run-for.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/start-own.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/appComponents/abet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/Joined.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/campaign/component/next.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
