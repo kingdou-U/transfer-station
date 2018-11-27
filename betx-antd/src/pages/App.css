@@ -1,0 +1,275 @@
+@import '~antd/dist/antd.css';
+.betx-table-wrapper {
+  width: 100%;
+}
+.betx-table-wrapper .betx-table {
+  width: 100%;
+  border: none;
+  color: #FFFFFF;
+  border-collapse: collapse;
+}
+.betx-table-wrapper .betx-table .betx-table-head {
+  color: #fff;
+}
+.betx-table-wrapper .betx-table .betx-table-head th {
+  text-align: center;
+  padding: 10px 13px;
+  font-weight: normal;
+  font-size: 18px;
+  border-bottom: 1px solid #E4CB81;
+}
+.betx-table-wrapper .betx-table .betx-table-body td {
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+}
+.betx-table-wrapper .betx-table .betx-table-body .betx-table-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.betx-table-wrapper .betx-table .expand-ico {
+  height: 18px;
+  display: block;
+  margin-left: 20px;
+}
+.betx-table-wrapper .betx-table-expand {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  padding: 18px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+div,
+p,
+ul,
+li,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a,
+a:visited,
+a:active,
+a:link,
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-image: url('../assets/imgs/main-bg.png');
+  background-repeat: repeat;
+}
+.App {
+  padding-top: 70px;
+  min-height: 100%;
+  font-family: MicrosoftYaHeiLight;
+}
+.App-header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #2D2D2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px;
+}
+.App-header .logo {
+  width: 60px;
+  height: 52px;
+  margin-left: 30px;
+  display: block;
+}
+.App-header .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.App-header .nav-lists {
+  padding-left: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.App-header .nav-lists li {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 4%;
+}
+.App-header .nav-lists li a {
+  color: #B4A68F;
+}
+.App-header .header-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #B4A68F;
+  font-size: 16px;
+}
+.App-header .header-control .login {
+  color: #B4A68F;
+  margin-right: 20px;
+}
+.App-header .header-control .i18n span {
+  display: inline-block;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.App-header .header-control .i18n span.current {
+  border: 1px solid #FDD672;
+  border-radius: 9px;
+}
+.App-view {
+  width: 75%;
+  min-width: 1200px;
+  margin: 30px auto;
+}
+/*公共样式*/
+.betx-btn {
+  background: #e6c36b;
+  border-radius: 12px;
+  color: #333333;
+  border: none;
+  padding: 2px 12px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+.betx-btn:active {
+  position: relative;
+  top: 1px;
+}
+.betx-btn-sm {
+  padding: 3px 12px;
+  font-size: 14px;
+}
+.betx-tag {
+  background: #e6c36b;
+  border-color: #e6c36b;
+  cursor: default;
+}
+.input-btn {
+  width: 67px;
+  height: 23px;
+  background: #e6c36b;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+.betx-textarea {
+  border: 2px solid #d5be7a;
+  border-radius: 10px;
+  resize: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+.betx-input-item {
+  width: 351px;
+  height: 42px;
+  border: 2px solid #d5be7a;
+  border-radius: 10px;
+  padding: 6px 15px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.betx-input-item button {
+  width: 67px;
+  height: 23px;
+  background: #e6c36b;
+  border-radius: 12px;
+  border: none;
+  color: #333333;
+  outline: none;
+  cursor: pointer;
+}
+.betx-input-item button:active {
+  position: relative;
+  top: 1px;
+}
+.betx-input-item .input-logo {
+  width: 30px;
+  height: 27px;
+}
+.betx-input-item input {
+  padding: 0 10px;
+  -webkit-box-flex: 1 ;
+      -ms-flex: 1 ;
+          flex: 1 ;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  display: block;
+}
+.betx-input-item input:focus,
+.betx-input-item input:active {
+  border: none;
+  outline: none;
+}
+.betx-input-item .ant-input:focus {
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
