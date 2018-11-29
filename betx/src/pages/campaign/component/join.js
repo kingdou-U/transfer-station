@@ -30,13 +30,13 @@ class Join extends React.Component {
             }]
         }
     }
-    expand (index) {
-        this.setState(prev => {
-            active:index===prev.active?-1:index
+    expand(index) {
+        this.setState((state, props) => {
+            return {
+                active:index===state.active?-1:index
+            }
         })
-        this.setState({
-           
-        });
+       
         const expand=this.refs['expand'];
 
         this.refs['tr'+index].after(expand)
