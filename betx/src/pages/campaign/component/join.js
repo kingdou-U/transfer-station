@@ -31,9 +31,11 @@ class Join extends React.Component {
         }
     }
     expand (index) {
-
+        this.setState(prev => {
+            active:index===prev.active?-1:index
+        })
         this.setState({
-            active:index===this.state.active?-1:index
+           
         });
         const expand=this.refs['expand'];
 
