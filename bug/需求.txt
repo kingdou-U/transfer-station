@@ -1,0 +1,1 @@
+1、FAQ 页面左边的tab整体有些小，desktop view，有些字被切掉了
