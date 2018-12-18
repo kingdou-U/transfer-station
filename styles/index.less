@@ -86,7 +86,7 @@ html,body{
   .radius-content{
     padding: 30px;
     box-sizing: border-box;
-    height: 80%;
+    height: 85%;
   }
 }
 
@@ -153,17 +153,57 @@ html,body{
     background: rgba(0,0,0,0.3);
     width:100%;
     box-sizing: border-box;
-    table{
-      width: 100%;
-      td{
+    .ranking-box{
+      height: 100%;
+      overflow: hidden;
+    }
+    .ranking-row{
+      display: flex;
+      align-items:center;
+      .ranking-td{
+        flex: 1 0 0;
         text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+      }
+    }
+    .ranking-table-head{
+      position: relative;
+      &:before,&:after{
+        content: "";
+        display: block;
+        background: #182a5d;
+        width: 5px;
+        position: absolute;
+        border: 1px dashed #3699ff;
+      }
+      &:before{
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
+      &:after{
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .ranking-td{
+        font-size: 18px;
+        color: #9d97fb;
+        background: #182a5d;
+      }
+    }
+    .ranking-table-body{
+      .ranking-td{
+        color: #2f95c9;
+        border-bottom:1px solid #3699ff;
       }
     }
   }
 }
 .bottom-section{
   height: 300px;
-
    .chart-title{
      color: #c4c0ff;
      padding-left: 20px;
@@ -194,4 +234,12 @@ html,body{
       overflow: hidden;
     }
   }
+
+}
+// 案件处理情况
+#caseDeal{
+  height: 278px;
+}
+.layui-carousel{
+  background: transparent;
 }

@@ -83,7 +83,7 @@ body {
 .radius-box .radius-content {
   padding: 30px;
   box-sizing: border-box;
-  height: 80%;
+  height: 85%;
 }
 .section {
   width: 100%;
@@ -149,11 +149,51 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-.info-panel .ranking table {
-  width: 100%;
+.info-panel .ranking .ranking-box {
+  height: 100%;
+  overflow: hidden;
 }
-.info-panel .ranking table td {
+.info-panel .ranking .ranking-row {
+  display: flex;
+  align-items: center;
+}
+.info-panel .ranking .ranking-row .ranking-td {
+  flex: 1 0 0;
   text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.info-panel .ranking .ranking-table-head {
+  position: relative;
+}
+.info-panel .ranking .ranking-table-head:before,
+.info-panel .ranking .ranking-table-head:after {
+  content: "";
+  display: block;
+  background: #182a5d;
+  width: 5px;
+  position: absolute;
+  border: 1px dashed #3699ff;
+}
+.info-panel .ranking .ranking-table-head:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.info-panel .ranking .ranking-table-head:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.info-panel .ranking .ranking-table-head .ranking-td {
+  font-size: 18px;
+  color: #9d97fb;
+  background: #182a5d;
+}
+.info-panel .ranking .ranking-table-body .ranking-td {
+  color: #2f95c9;
+  border-bottom: 1px solid #3699ff;
 }
 .bottom-section {
   height: 300px;
@@ -186,4 +226,10 @@ body {
 .bottom-section .carousel #onAir {
   border-radius: 10px;
   overflow: hidden;
+}
+#caseDeal {
+  height: 278px;
+}
+.layui-carousel {
+  background: transparent;
 }
