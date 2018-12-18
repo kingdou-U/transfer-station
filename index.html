@@ -11,114 +11,157 @@
     <div class="header-nav">
         <a href="##">绵阳市公诉智能出庭指挥系统</a>
     </div>
-    <section class="layui-row">
+    <section class="section top-section">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 ">
+                <div class="radius-box distribute">
+                    <div class="radius-border">
+                        <img class="arc lt" src="./images/lt.png" alt="">
+                        <img class="arc lb" src="./images/lb.png" alt="">
+                        <img class="arc rt" src="./images/rt.png" alt="">
+                        <img class="arc rb" src="./images/rb.png" alt="">
+                    </div>
+                    <div class="radius-title"><span>案别分布</span></div>
+                    <!--<div class="chart-bg">-->
+                        <!--<img src="./images/nanding.png" alt="">-->
+                    <!--</div>-->
+                    <div class="distributeChartBox">
+                        <div id="distributeChart">
+                        </div>
+                        <img class="center-port" src="./images/center.png" alt="">
+                    </div>
 
-        <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 ">
-            <div class="radius-box">
-                <div class="radius-border">
-                    <img class="lt" src="./images/lt.png" alt="">
-                    <img class="lb" src="./images/lb.png" alt="">
-                    <img class="rt" src="./images/rt.png" alt="">
-                    <img class="rb" src="./images/rb.png" alt="">
                 </div>
-                <div class="radius-title"><span>案别分布</span></div>
-                <div id="distribute-chart"></div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <div class="graph-box">占位内容啊啊啊</div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 ">
+                <div class="info-panel">
+                    <div class="radius-box notice">
+                        <div class="radius-border">
+                            <img class="arc lt" src="./images/lt.png" alt="">
+                            <img class="arc lb" src="./images/lb.png" alt="">
+                            <img class="arc rt" src="./images/rt.png" alt="">
+                            <img class="arc rb" src="./images/rb.png" alt="">
+                        </div>
+                        <div class="radius-title"><span>通知</span></div>
+                        <div class="radius-content">
+                            <ul class="notice-lists">
+                                <li>
+                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判平武县首例污染环境刑事案件昨日宣判平武县首例污染环境刑事案件昨日宣判</a>
+                                </li>
+                                <li>
+                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
+                                </li>
+                                <li>
+                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
+                                </li>
+                                <li>
+                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
+                                </li>
+                                <li>
+                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
+                                </li>
+                                <li>
+                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="radius-box ranking">
+                        <div class="radius-border">
+                            <img class="arc lt" src="./images/lt.png" alt="">
+                            <img class="arc lb" src="./images/lb.png" alt="">
+                            <img class="arc rt" src="./images/rt.png" alt="">
+                            <img class="arc rb" src="./images/rb.png" alt="">
+                        </div>
+                        <div class="radius-title"><span>综合绩效排名</span></div>
+                        <div class="radius-content">
+                            <div class="ranking-box notice">
+                               <div class="ranking-table">
+                                   <div class="ranking-table-head">
+                                       <div class="ranking-row">
+                                           <div class="ranking-td">姓名</div>
+                                           <div class="ranking-td">所属单位</div>
+                                           <div class="ranking-td">分数</div>
+                                       </div>
+                                   </div>
+                                   <div class="ranking-table-body">
+                                       <div class="ranking-row">
+                                           <div class="ranking-td">刘书宇</div>
+                                           <div class="ranking-td">江油人民检察院公诉科</div>
+                                           <div class="ranking-td">99</div>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-            <div class="graph-box"></div>
-        </div>
-        <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 ">
-            <div class="notice">
-                <div class="radius-box">
-                    <div class="radius-border">
-                        <img class="lt" src="./images/lt.png" alt="">
-                        <img class="lb" src="./images/lb.png" alt="">
-                        <img class="rt" src="./images/rt.png" alt="">
-                        <img class="rb" src="./images/rb.png" alt="">
-                    </div>
-                    <div class="radius-title"><span>通知</span></div>
-                    <ul class="notice-lists">
-                        <li>
-                            <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                        </li>
-                        <li>
-                            <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                        </li>
-                        <li>
-                            <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                        </li>
-                        <li>
-                            <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                        </li>
-                        <li>
-                            <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                        </li>
-                        <li>
-                            <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                        </li>
-
-                    </ul>
+    </section>
+    <section class="section bottom-section">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 chart-item">
+                <div class="chart-box">
+                    <h5 class="chart-title">案件处理情况</h5>
+                    <div id="caseDeal"></div>
                 </div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 carousel">
+                <!--轮播图-->
                 <div class="radius-box">
                     <div class="radius-border">
-                        <img class="lt" src="./images/lt.png" alt="">
-                        <img class="lb" src="./images/lb.png" alt="">
-                        <img class="rt" src="./images/rt.png" alt="">
-                        <img class="rb" src="./images/rb.png" alt="">
+                        <img class="arc lt" src="./images/lt.png" alt="">
+                        <img class="arc lb" src="./images/lb.png" alt="">
+                        <img class="arc rt" src="./images/rt.png" alt="">
+                        <img class="arc rb" src="./images/rb.png" alt="">
                     </div>
-                    <div class="radius-title"><span>综合绩效排名</span></div>
-                    <div class="ranking-box">
-                        <div class="ranking-header">
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>姓名</th>
-                                    <th>所属单位</th>
-                                    <th>分数</th>
-                                </tr>
-                                </thead>
-                            </table>
-                            <table>
-                                <tbody>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>江油人民检查院某某科</td>
-                                    <td>98</td>
-                                </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>江油人民检查院某某科</td>
-                                    <td>98</td>
-                                </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>江油人民检查院某某科</td>
-                                    <td>98</td>
-                                </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>江油人民检查院某某科</td>
-                                    <td>98</td>
-                                </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>江油人民检查院某某科</td>
-                                    <td>98</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                    <div class="layui-carousel" id="onAir" lay-filter="onAir">
+                        <div carousel-item>
+                            <div>
+                                <a href="##">
+                                    <img src="./images/onAir.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="##">
+                                    <img src="./images/onAir.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="##">
+                                    <img src="./images/onAir.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
-
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 chart-item">
+                <div class="chart-box">
+                    <h5 class="chart-title">锦阳市检察机关案件趋势对比</h5>
+                    <div id="trend"></div>
+                </div>
+            </div>
         </div>
-
-
     </section>
+
 </div>
+
+<!-- 条目中可以是任意内容，如：<img src=""> -->
+
+
 <script src="./libs/echarts/echarts.js"></script>
+<script src="./libs/layui/layui.all.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>
