@@ -357,7 +357,7 @@ $.getJSON('../libs/510700.json',function(data){
             type: 'effectScatter',
             coordinateSystem: 'geo',
             symbolSize: function(val) {
-                return val[2] ;
+                return 16;
             },
             showEffectOn: 'render',
             rippleEffect: {
@@ -378,13 +378,15 @@ $.getJSON('../libs/510700.json',function(data){
                 normal: {
                     formatter: '{b}',
                     position: 'bottom',
-                    show: true
+                    show: true,
+                    textStyle:{
+                        color:'#fff'
+                    }
                 },
                 emphasis: {
                     show: true
                 }
             },
-
         },
             {
                 name: '点',
