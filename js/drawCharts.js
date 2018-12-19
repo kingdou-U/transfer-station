@@ -289,3 +289,123 @@ function trendChart(){
     var myChart = echarts.init(document.getElementById('trend'));
     myChart.setOption(option);
 }
+
+// 绵阳市案件分布图
+$.getJSON('../libs/510700.json',function(data){
+    var jsonData = data.features;
+    var mapName='MianYang';
+    echarts.registerMap(mapName,data);
+    //处理经纬度
+    var geoCoordMap={};
+    jsonData.forEach(function(val){
+        // 地区名称
+        var name =val.properties.name;
+        // 地区经纬度
+        var longlatArr = val.geometry.coordinates[0][0];
+        var half = longlatArr.length/2;
+        geoCoordMap[name]=longlatArr[half];
+    });
+    //假数据
+    var data=[
+        {name:'安县',value:18},
+        {name:'平武县',value:28},
+        {name:'北川羌族自治县',value:15},
+        {name:'涪城区',value:12},
+        {name:'游仙区',value:14},
+        {name:'梓潼县',value:8},
+        {name:'三台县',value:16},
+        {name:'盐亭县',value:28},
+        {name:'江油市',value:21},
+    ];
+    //整合数据与经纬度
+    var convertData = function(data){
+        var res= [];
+        for(var i=0;i<data.length;i++){
+            var geoCoord=geoCoordMap[data[i].name];
+            if(geoCoord){
+                res.push({
+                    name:data[i].name,
+                    value:geoCoord.concat(data[i].value),
+                })
+            }
+        }
+        return res;
+    }
+    var option = {
+        geo: {
+            show: true,
+            map: mapName,
+            itemStyle: {
+                normal: {
+                    areaColor: 'transparent', //区块颜色
+                    borderColor: '#3699ff',
+                    borderWidth:2,
+                },
+                emphasis: {
+                    areaColor: '#1480e3', //鼠标移上时，区块颜色
+                }
+            }
+        },
+        series: [{
+            name:'散点',
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            symbolSize: function(val) {
+                return val[2] ;
+            },
+            showEffectOn: 'render',
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            hoverAnimation: true,
+            itemStyle: {
+                normal: {
+                    color: '#F62157',
+                    shadowBlur: 10,
+                    shadowColor: '#F62157'
+                }
+            },
+            zlevel: 1,
+            data: convertData(data),
+            label: {
+                normal: {
+                    formatter: '{b}',
+                    position: 'bottom',
+                    show: true
+                },
+                emphasis: {
+                    show: true
+                }
+            },
+
+        },
+            {
+                name: '点',
+                type: 'scatter',
+                coordinateSystem: 'geo',
+                label: {
+                    normal: {
+                        show: true,
+                        formatter:'{@value}',
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 9,
+                        }
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: '#F62157', //标志颜色
+                    }
+                },
+                zlevel: 6,
+                data: convertData(data),
+            },
+
+
+        ]
+    };
+    var myChart = echarts.init(document.getElementById('graphChart'));
+    myChart.setOption(option);
+    console.log(myChart)
+});

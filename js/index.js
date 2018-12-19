@@ -14,10 +14,8 @@ distributeChart();
 dealStation();
 // 趋势对比图
 trendChart();
-
-// 消息滚动
-function scrollTips(){
-    var $scrollLists = $('.notice-lists');
+function scrollBlock(el,firstChild){
+    var $scrollLists = $(el);
     var timer = null;
     $scrollLists.hover(function(){
         clearInterval(timer);
@@ -28,35 +26,19 @@ function scrollTips(){
     }).trigger('mouseleave');
 
     function scrollNow(){
-        var height = $scrollLists.find('li:first').height();
+        var height = $scrollLists.find(firstChild).height();
         $scrollLists.stop().animate({
             marginTop:-height
-        },800,function(){
+        },1000,function(){
             $scrollLists.css({
                 marginTop:0
-            }).find('li:first').appendTo($scrollLists);
+            }).find(firstChild).appendTo($scrollLists);
         })
     }
 }
-scrollTips();
+// 消息滚动
+scrollBlock('.notice-lists','li:first');
 // 绩效排名
-function scrollRank(){
-    var $scrollLists = $('.ranking-table-body');
-    var timer = null;
-    $scrollLists.hover(function(){
-        clearInterval(timer);
-    },function(){
-        timer= setInterval(function(){
-            scrollNow();
-        },1000);
-    }).trigger('mouseleave');
-    function scrollNow(){
-        var height = $scrollLists.find('.ranking-row:first').height();
-        $scrollLists.stop().animate({
-            marginTop:-height,
-        },1000,function(){
-            $scrollLists.css({marginTop:0}).find('.ranking-row:first').appendTo($scrollLists);
-        })
-    }
-}
-scrollRank();
+scrollBlock('.ranking-table-body','.ranking-row:first');
+
+
