@@ -67,8 +67,12 @@ body {
   font-size: 20px;
   font-weight: bold;
   height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .radius-box .radius-title > span {
   display: block;
@@ -82,93 +86,114 @@ body {
 }
 .radius-box .radius-content {
   padding: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 85%;
 }
-.section {
+.top-section {
   width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
-.distribute {
-  height: 580px;
+.top-section .distribute {
+  height: 500px;
   background: rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.distribute .chart-bg {
+.top-section .distribute .chart-bg {
   position: absolute;
   z-index: -1;
 }
-.distribute .distributeChartBox {
+.top-section .distribute .distributeChartBox {
   position: relative;
 }
-.distribute .distributeChartBox .center-port {
+.top-section .distribute .distributeChartBox .center-port {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-.distribute #distributeChart {
+.top-section .distribute #distributeChart {
   width: 100%;
   height: 450px;
-  background: url('../images/nanding.png') no-repeat center center;
-  background-size: 45% auto;
+  background: url('../images/nanding.png') no-repeat 48% 24%;
+  background-size: 50% auto;
 }
-.info-panel {
-  height: 580px;
-}
-.info-panel .notice {
-  height: 48%;
+.top-section .info-panel .notice {
+  height: calc(240px);
   background: rgba(0, 0, 0, 0.3);
-  margin-bottom: 4%;
+  margin-bottom: 20px;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.info-panel .notice .notice-lists {
+.top-section .info-panel .notice .notice-wrapper {
   height: 100%;
   overflow: hidden;
 }
-.info-panel .notice .notice-lists li {
+.top-section .info-panel .notice .notice-lists li {
   font-size: 14px;
   line-height: 35px;
   color: #c4c0ff;
 }
-.info-panel .notice .notice-lists li a {
+.top-section .info-panel .notice .notice-lists li a {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.info-panel .notice .notice-lists li a:hover {
+.top-section .info-panel .notice .notice-lists li a:hover {
   color: #2f95c9;
 }
-.info-panel .ranking {
-  height: 48%;
+.top-section .info-panel .ranking {
+  height: calc(240px);
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.info-panel .ranking .ranking-box {
+.top-section .info-panel .ranking .ranking-box {
   height: 100%;
   overflow: hidden;
 }
-.info-panel .ranking .ranking-row {
+.top-section .info-panel .ranking .ranking-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.info-panel .ranking .ranking-row .ranking-td {
-  flex: 1 0 0;
+.top-section .info-panel .ranking .ranking-row .ranking-td {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0 ;
   text-align: center;
   height: 40px;
   line-height: 40px;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.info-panel .ranking .ranking-table-head {
+.top-section .info-panel .ranking .ranking-row .ranking-td:first-child {
+  -webkit-box-flex: 130px;
+      -ms-flex: 130px 0 0px;
+          flex: 130px 0 0;
+}
+.top-section .info-panel .ranking .ranking-row .ranking-td:last-child {
+  -webkit-box-flex: 70px;
+      -ms-flex: 70px 0 0px;
+          flex: 70px 0 0;
+}
+.top-section .info-panel .ranking .ranking-table-head {
   position: relative;
 }
-.info-panel .ranking .ranking-table-head:before,
-.info-panel .ranking .ranking-table-head:after {
+.top-section .info-panel .ranking .ranking-table-head:before,
+.top-section .info-panel .ranking .ranking-table-head:after {
   content: "";
   display: block;
   background: #182a5d;
@@ -176,27 +201,60 @@ body {
   position: absolute;
   border: 1px dashed #3699ff;
 }
-.info-panel .ranking .ranking-table-head:before {
+.top-section .info-panel .ranking .ranking-table-head:before {
   top: 0;
   left: 0;
   bottom: 0;
 }
-.info-panel .ranking .ranking-table-head:after {
+.top-section .info-panel .ranking .ranking-table-head:after {
   top: 0;
   right: 0;
   bottom: 0;
 }
-.info-panel .ranking .ranking-table-head .ranking-td {
+.top-section .info-panel .ranking .ranking-table-head .ranking-td {
   font-size: 18px;
   color: #9d97fb;
   background: #182a5d;
 }
-.info-panel .ranking .ranking-table-body .ranking-td {
+.top-section .info-panel .ranking .ranking-table-body .ranking-td {
   color: #2f95c9;
   border-bottom: 1px solid #3699ff;
 }
+.top-section .graph-box {
+  height: 500px;
+  position: relative;
+  color: #2f95c9;
+}
+.top-section .graph-box .lt-text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.top-section .graph-box .rt-text {
+  position: absolute;
+  font-size: 16px;
+  right: 20px;
+  top: 20px;
+}
+.top-section .graph-box .chartMask,
+.top-section .graph-box #graphChart {
+  height: 100%;
+  width: 420px;
+  margin: 0 auto;
+}
+.top-section .graph-box .chartMask {
+  background: rgba(22, 208, 255, 0.3);
+  border: 1px dashed #3699ff;
+}
 .bottom-section {
   height: 300px;
+  width: 100%;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 .bottom-section .chart-title {
   color: #c4c0ff;
@@ -214,20 +272,29 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
-}
-.bottom-section .carousel {
-  height: 300px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .bottom-section .carousel .radius-box {
-  height: 100%;
+  height: 300px;
   padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .bottom-section .carousel #onAir {
   border-radius: 10px;
   overflow: hidden;
+  height: calc(284px);
 }
-#caseDeal {
+.bottom-section .carousel #onAir img {
+  display: block;
+  height: 100%;
+}
+.bottom-section .carousel .layui-carousel > [carousel-item] > * {
+  background: transparent;
+}
+#caseDeal,
+#trend {
   height: 278px;
 }
 .layui-carousel {
