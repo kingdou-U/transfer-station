@@ -301,10 +301,9 @@ $.getJSON('../libs/510700.json',function(data){
         // 地区名称
         var name =val.properties.name;
         // 地区经纬度
-        var longlatArr = val.geometry.coordinates[0][0];
-        var half = longlatArr.length/2;
-        geoCoordMap[name]=longlatArr[half];
+        geoCoordMap[name]=val.properties.cp;
     });
+    console.log(jsonData)
     //假数据
     var data=[
         {name:'安县',value:18},
@@ -344,7 +343,14 @@ $.getJSON('../libs/510700.json',function(data){
                 emphasis: {
                     areaColor: '#1480e3', //鼠标移上时，区块颜色
                 }
-            }
+            },
+            layoutCenter:['50%','50%'],
+            layoutSize:'110%',
+        },
+        grid:{
+          top:10,
+          left:'10%',
+          bottom:'10%'
         },
         series: [{
             name:'散点',
@@ -366,6 +372,7 @@ $.getJSON('../libs/510700.json',function(data){
                 }
             },
             zlevel: 1,
+            zoom:2,
             data: convertData(data),
             label: {
                 normal: {
@@ -407,5 +414,4 @@ $.getJSON('../libs/510700.json',function(data){
     };
     var myChart = echarts.init(document.getElementById('graphChart'));
     myChart.setOption(option);
-    console.log(myChart)
 });
