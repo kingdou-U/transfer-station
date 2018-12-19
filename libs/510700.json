@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "安县",
-        "cp":[104.5659000000,31.5395400000]
+        "cp":[104.4085693359,31.4989456780]
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -653,7 +653,7 @@
       "type": "Feature",
       "properties": {
         "name": "涪城区",
-        "cp":[104.7635001865,31.4613009688]
+        "cp":[104.6928405762,31.4239757380]
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -841,7 +841,7 @@
       "type": "Feature",
       "properties": {
         "name": "江油市",
-        "cp":[104.7245800000,31.7569100000]
+        "cp":[104.7903442383,31.8360764137]
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2393,7 +2393,7 @@
       "type": "Feature",
       "properties": {
         "name": "游仙区",
-        "cp":[104.7667000000,31.4736700000]
+        "cp":[104.9020099640,31.5109470045]
       },
       "geometry": {
         "type": "MultiPolygon",
