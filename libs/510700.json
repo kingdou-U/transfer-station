@@ -2093,7 +2093,7 @@
       "type": "Feature",
       "properties": {
         "name": "盐亭县",
-        "cp":[105.3899600000,31.2081900000]
+        "cp":[105.4769897461,31.2891134561]
       },
       "geometry": {
         "type": "MultiPolygon",

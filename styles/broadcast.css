@@ -1,0 +1,204 @@
+body {
+  background: #02111d;
+}
+.layui-layout-admin .layui-header {
+  background: #5e4dff;
+  height: 70px;
+}
+.layui-layout-admin .layui-header .logOut {
+  width: 30px;
+  height: 30px;
+}
+.layui-layout-admin .layui-header .top-search {
+  background: #4b3be1;
+  color: #a3d4ff;
+  display: inline-block;
+  height: 40px;
+  border-radius: 50px;
+  padding-right: 30px;
+  position: absolute;
+  right: 200px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.layui-layout-admin .layui-header .top-search .layui-icon-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+}
+.layui-layout-admin .layui-header .top-search input {
+  display: block;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 10px;
+  width: 160px;
+}
+.layui-layout-admin .layui-header .top-search input::-webkit-input-placeholder {
+  color: #a3d4ff;
+}
+.layui-layout-admin .layui-header .top-search input:-ms-input-placeholder {
+  color: #a3d4ff;
+}
+.layui-layout-admin .layui-header .top-search input::-ms-input-placeholder {
+  color: #a3d4ff;
+}
+.layui-layout-admin .layui-header .top-search input::placeholder {
+  color: #a3d4ff;
+}
+.layui-layout-admin .layui-logo .logo-left {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding-left: 20px;
+}
+.layui-layout-admin .layui-logo .logo-left .img-logo {
+  display: inline-block;
+  padding-right: 10px;
+}
+.layui-layout-admin .layui-logo .logo-left .img-logo img {
+  display: block;
+  width: 58px;
+  height: 60px;
+}
+.layui-layout-admin .layui-logo .title-logo {
+  display: inline-block;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  position: relative;
+}
+.layui-layout-admin .layui-logo .title-logo:before {
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  color: #fff;
+  background: #fff;
+  display: block;
+}
+.layui-layout-admin .layui-logo .title-logo h3 {
+  font-size: 17px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.layui-layout-admin .layui-logo .title-logo p {
+  font-size: 14px;
+}
+.layui-layout-admin .layui-layout-left {
+  left: 300px;
+}
+.layui-layout-admin .layui-nav-item {
+  line-height: 70px;
+}
+.layui-layout-admin .layui-side {
+  top: 70px;
+}
+.layui-layout-admin .layui-body {
+  top: 70px;
+  bottom: 20px;
+  padding: 20px;
+}
+.layui-bg-black {
+  background-color: #1c2237!important;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-nav-tree .layui-this,
+.layui-nav-tree .layui-this > a,
+.layui-nav-tree .layui-this > a:hover {
+  background-color: #161a2a;
+  color: #fff;
+}
+.layui-nav-tree .layui-nav-item > a {
+  color: #00f7ff!important;
+}
+.total-btn {
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#6056fe), to(#00b2c9));
+  background-image: linear-gradient(360deg, #6056fe 0%, #00b2c9 100%);
+  padding: 4px 10px;
+  border-radius: 4px;
+  outline: none;
+}
+.broadcast-window {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.broadcast-window.full-screen {
+  height: 510px;
+}
+.broadcast-window.full-screen-side {
+  height: 250px;
+}
+.broadcast-window.full-screen-side.mb-10 {
+  margin-bottom: 10px;
+}
+.broadcast-window .top-tag {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#6056fe), to(#00b2c9));
+  background-image: linear-gradient(360deg, #6056fe 0%, #00b2c9 100%);
+  opacity: 0.8;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  text-align: center;
+  border-bottom-right-radius: 8px;
+}
+.broadcast-window .broadcast-tag {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-top-left-radius: 8px;
+}
+.broadcast-window .broadcast-screen {
+  width: 100%;
+  height: 100%;
+}
+.broadcast-window .broadcast-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.case-info {
+  font-size: 12px;
+  padding: 10px;
+  border: 1px solid #00b2c9;
+  color: #00b2c9;
+  border-radius: 2px;
+  position: relative;
+}
+.case-info .info-lists li {
+  list-style: circle inside;
+  line-height: 1.5em;
+}
+.case-info .detail-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+}
