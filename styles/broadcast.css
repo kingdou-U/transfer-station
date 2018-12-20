@@ -185,6 +185,85 @@ body {
   width: 100%;
   height: 100%;
 }
+.chat-room {
+  border: 1px solid #00b2c9;
+  color: #00b2c9;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.chat-room .chat-title {
+  font-size: 18px;
+  border-bottom: 1px solid #00b2c9;
+  padding: 8px 15px;
+}
+.chat-room .chat-panel {
+  position: relative;
+  padding-right: 100px;
+}
+.chat-room .chat-panel .chat-history {
+  border-bottom: 1px solid #00b2c9;
+  height: 300px;
+}
+.chat-room .chat-panel .chat-other {
+  border-bottom: 1px solid #00b2c9;
+  padding: 8px 20px;
+}
+.chat-room .chat-panel .chat-other button {
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.chat-room .chat-panel .chat-other button img {
+  height: 22px;
+}
+.chat-room .chat-panel .chat-input {
+  position: relative;
+}
+.chat-room .chat-panel .chat-input textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #00b2c9;
+  height: 150px;
+  resize: none;
+}
+.chat-room .chat-panel .chat-input .sendBtn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.chat-room .chat-panel .chat-member {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 99px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px solid #00b2c9;
+}
+.chat-room .chat-panel .chat-member .member-title {
+  border-bottom: 1px solid #00b2c9;
+  padding: 8px 15px;
+  position: relative;
+}
+.chat-room .chat-panel .chat-member .member-title:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #00b2c9;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.chat-room .chat-panel .chat-member .member-list {
+  padding: 8px 15px;
+  line-height: 1.5em;
+}
 .case-info {
   font-size: 12px;
   padding: 10px;
