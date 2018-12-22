@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <div class="header-nav">
-        <a href="##">绵阳市公诉智能出庭指挥系统</a>
+        <a href="./broadcast.html">绵阳市公诉智能出庭指挥系统</a>
     </div>
     <section class="section top-section">
         <div class="layui-row layui-col-space20">
@@ -22,19 +22,26 @@
                         <img class="arc rb" src="./images/rb.png" alt="">
                     </div>
                     <div class="radius-title"><span>案别分布</span></div>
-                    <!--<div class="chart-bg">-->
-                        <!--<img src="./images/nanding.png" alt="">-->
-                    <!--</div>-->
                     <div class="distributeChartBox">
-                        <div id="distributeChart">
-                        </div>
+                        <div id="distributeChart"></div>
                         <img class="center-port" src="./images/center.png" alt="">
                     </div>
 
                 </div>
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-                <div class="graph-box">占位内容啊啊啊</div>
+                <div class="graph-box">
+                    <div class="lt-text">
+                        <p>截止至2018年11月20日</p>
+                        <p>累计案件931232起</p>
+                        <p>累计受理案件731234起</p>
+                    </div>
+                    <div class="rt-text">
+                        <p>【昨日案件84起】</p>
+                    </div>
+                    <div class="chartMask"></div>
+                    <div id="graphChart"></div>
+                </div>
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4 ">
                 <div class="info-panel">
@@ -47,29 +54,33 @@
                         </div>
                         <div class="radius-title"><span>通知</span></div>
                         <div class="radius-content">
-                            <ul class="notice-lists">
-                                <li>
-                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判平武县首例污染环境刑事案件昨日宣判平武县首例污染环境刑事案件昨日宣判</a>
-                                </li>
-                                <li>
-                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                                </li>
-                                <li>
-                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                                </li>
-                                <li>
-                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                                </li>
-                                <li>
-                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                                </li>
-                                <li>
-                                    <a href="##">【刑事】平武县首例污染环境刑事案件昨日宣判</a>
-                                </li>
+                            <div class="notice-wrapper">
+                                <ul class="notice-lists">
+                                    <li>
+                                        <a href="##">【刑事】1平武县首例污染环境刑事案件昨日宣判平武县首例污染环境刑事案件昨日宣判平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">【刑事】2平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">【刑事】3平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">【刑事】4平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">【刑事】5平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">【刑事】6平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">【刑事】6平武县首例污染环境刑事案件昨日宣判</a>
+                                    </li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
-
                     </div>
                     <div class="radius-box ranking">
                         <div class="radius-border">
@@ -101,17 +112,17 @@
                                            <div class="ranking-td">98</div>
                                        </div>
                                          <div class="ranking-row">
-                                           <div class="ranking-td">范子英</div>
+                                           <div class="ranking-td">222</div>
                                            <div class="ranking-td">锦阳市人民检察院公诉科</div>
                                            <div class="ranking-td">98</div>
                                        </div>
                                          <div class="ranking-row">
-                                           <div class="ranking-td">范子英</div>
+                                           <div class="ranking-td">333</div>
                                            <div class="ranking-td">锦阳市人民检察院公诉科</div>
                                            <div class="ranking-td">98</div>
                                        </div>
                                          <div class="ranking-row">
-                                           <div class="ranking-td">范子英</div>
+                                           <div class="ranking-td">444</div>
                                            <div class="ranking-td">锦阳市人民检察院公诉科</div>
                                            <div class="ranking-td">98</div>
                                        </div>
@@ -123,7 +134,6 @@
 
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -178,11 +188,11 @@
 
 </div>
 
-<!-- 条目中可以是任意内容，如：<img src=""> -->
-
-
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="./libs/echarts/echarts.js"></script>
 <script src="./libs/layui/layui.all.js"></script>
+<script src="./js/MY.js"></script>
+<script src="./js/drawCharts.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

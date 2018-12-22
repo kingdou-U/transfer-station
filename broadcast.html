@@ -2,9 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>绵阳市公诉智能出庭指挥系统</title>
+    <link rel="stylesheet" href="./libs/layui/css/layui.css">
+    <link rel="stylesheet" href="./styles/broadcast.css">
 </head>
-<body>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">
+            <div class="logo-left">
+                <div class="img-logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="title-logo">
+                    <h3>四川省最高人民检察院</h3>
+                    <p>公诉智能出庭指挥系统</p>
+                </div>
+            </div>
+        </div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item">
+                <a href="">
+                    <i class="layui-icon layui-icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">
+                    <i class="layui-icon layui-icon-play"></i>
+                    <span>庭审直播</span>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">
+                    <i class="layui-icon layui-icon-tabs"></i>
+                    <span>庭审信息管理</span>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">
+                    <i class="layui-icon layui-icon-set"></i>
+                    <span>系统管理</span>
+                </a>
+            </li>
+        </ul>
+        <div class="top-search">
+            <input placeholder="输入案件名或公诉人名" type="text">
+            <i class="layui-icon layui-icon-search"></i>
+        </div>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">Admin</a>
+            </li>
+            <li class="layui-nav-item"><a href=""><img class="logOut" src="./images/logout.png" alt=""></a></li>
+        </ul>
+    </div>
 
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">成都市(15)</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">武侯区(5)</a></dd>
+                        <dd><a href="javascript:;">成华区(5)</a></dd>
+                        <dd><a href="javascript:;">双流县(5)</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">绵阳市</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">江油县</a></dd>
+                        <dd><a href="javascript:;">三台县</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div class="layui-row layui-col-space10 ">
+            <div class="layui-col-md9">
+               <div class="layui-row layui-col-space10">
+                   <div class="layui-col-md8">
+                       <div class="broadcast-window full-screen">
+                           <span class="top-tag">六屏显示</span>
+                           <div class="broadcast-screen">
+                               <img src="./images/onAir/full.png" alt="">
+                           </div>
+                           <div class="broadcast-tag">全屏</div>
+                       </div>
+                   </div>
+                   <div class="layui-col-md4">
+                       <div class="broadcast-window full-screen-side mb-10">
+                           <div class="broadcast-screen">
+                               <img src="./images/onAir/faguan.png" alt="">
+                           </div>
+                           <div class="broadcast-tag">法官</div>
+                       </div>
+                       <div class="broadcast-window full-screen-side">
+                           <div class="broadcast-screen">
+                               <img src="./images/onAir/gongsuren.png" alt="">
+                           </div>
+                           <div class="broadcast-tag">公诉人</div>
+                       </div>
+                   </div>
+               </div>
+                <div class="layui-row layui-col-space10">
+                    <div class="layui-col-md4">
+                        <div class="broadcast-window full-screen-side">
+                            <div class="broadcast-screen">
+                                <img src="./images/onAir/beigao.png" alt="">
+                            </div>
+                            <div class="broadcast-tag">被告</div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="broadcast-window full-screen-side">
+                            <div class="broadcast-screen">
+                                <img src="./images/onAir/guanzhong.png" alt="">
+                            </div>
+                            <div class="broadcast-tag">观众席</div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="broadcast-window full-screen-side">
+                            <div class="broadcast-screen">
+                                <img src="./images/onAir/beigao2.png" alt="">
+                            </div>
+                            <div class="broadcast-tag">被告</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md3">
+                <div class="chat-room">
+                    <div class="chat-title">
+                        <span>921盗窃案</span>
+                    </div>
+                    <div class="chat-panel">
+                        <div class="chat-box">
+                            <div class="chat-history"></div>
+                            <div class="chat-other">
+                                <button><img src="./images/speech.png" alt=""></button>
+                                <button><img src="./images/call.png" alt=""></button>
+                                <button><img src="./images/file.png" alt=""></button>
+                            </div>
+                            <div class="chat-input">
+                                <textarea ></textarea>
+                                <button class="sendBtn total-btn">发送</button>
+                            </div>
+                        </div>
+                        <div class="chat-member">
+                            <div class="member-title">成员</div>
+                            <ul class="member-list">
+                                <li>常大厨</li>
+                                <li>张大厨</li>
+                                <li>刘法官</li>
+                                <li>书记员</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-info">
+                    <ul class="info-lists">
+                        <li>案件名称：912盗窃案</li>
+                        <li>公诉人：李冰</li>
+                        <li>书记员：王娜</li>
+                        <li>法庭编号：（2017）川0105民初10142号</li>
+                        <li>庭审地点：河西区人民法院河西区人民法院河西区人民法院河西区人民法院</li>
+                        <li>案件编号：（2017）川0105民初10142号</li>
+                        <li>公诉人编号：1227890</li>
+                        <li>书记员编号：12783178</li>
+                        <li>出庭时间：2017年11月11日</li>
+                        <li>房间号：11340</li>
+                    </ul>
+                    <button class="total-btn detail-btn">详情</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="./libs/layui/layui.all.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
 </body>
 </html>
