@@ -158,7 +158,7 @@ function dealStation(){
                 },
             }
         ],
-      
+
         series : [
             {
                 name:'结案数',
@@ -237,7 +237,7 @@ function trendChart(){
         grid: {
             left: '3%',
             right: '4%',
-            bottom: '10%',
+            bottom: '5%',
             containLabel: true,
             borderColor:'#0090fb'
         },
@@ -259,6 +259,9 @@ function trendChart(){
             {
                 type:'value',
                 name:'案件数',
+                axisLabel:{
+                  show:false,
+                },
                 axisLine:{
                     lineStyle: {color:'#0090fb'}
                 },

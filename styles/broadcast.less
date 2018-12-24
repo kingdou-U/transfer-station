@@ -1,6 +1,10 @@
 body{
   background: #02111d;
 }
+/*自适应*/
+@noteWidth:1400px;
+@NoteBook:~"screen and (max-width:@{noteWidth})";
+
 .layui-layout-admin{
   .layui-header{
     background: #5e4dff;
@@ -101,7 +105,22 @@ body{
     top: 70px;
     bottom:20px;
     padding: 20px;
-
+  }
+  @media @NoteBook{
+    @sideWidth:180px;
+    .layui-side{
+      width:@sideWidth;
+      .layui-side-scroll{
+        width:@sideWidth;
+      }
+      .layui-nav-tree{
+        width:@sideWidth;
+      }
+    }
+    .layui-body{
+      left: 180px;
+      padding: 10px;
+    }
   }
 }
 

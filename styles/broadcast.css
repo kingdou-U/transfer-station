@@ -1,6 +1,7 @@
 body {
   background: #02111d;
 }
+/*自适应*/
 .layui-layout-admin .layui-header {
   background: #5e4dff;
   height: 70px;
@@ -112,6 +113,21 @@ body {
   top: 70px;
   bottom: 20px;
   padding: 20px;
+}
+@media screen and (max-width:1400px) {
+  .layui-layout-admin .layui-side {
+    width: 180px;
+  }
+  .layui-layout-admin .layui-side .layui-side-scroll {
+    width: 180px;
+  }
+  .layui-layout-admin .layui-side .layui-nav-tree {
+    width: 180px;
+  }
+  .layui-layout-admin .layui-body {
+    left: 180px;
+    padding: 10px;
+  }
 }
 .layui-bg-black {
   background-color: #1c2237!important;
