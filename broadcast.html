@@ -86,8 +86,8 @@
         <!-- 内容主体区域 -->
         <div class="layui-row layui-col-space10 ">
             <div class="layui-col-md9">
-               <div class="layui-row layui-col-space10">
-                   <div class="layui-col-md8">
+               <div class="layui-row layui-col-space10 clearfix">
+                   <div class="layui-col-md8 same-height same-height-target">
                        <div class="broadcast-window full-screen">
                            <span class="top-tag">六屏显示</span>
                            <div class="broadcast-screen">
@@ -96,7 +96,7 @@
                            <div class="broadcast-tag">全屏</div>
                        </div>
                    </div>
-                   <div class="layui-col-md4">
+                   <div class="layui-col-md4 same-height">
                        <div class="broadcast-window full-screen-side mb-10">
                            <div class="broadcast-screen">
                                <img src="./images/onAir/faguan.png" alt="">
@@ -113,7 +113,7 @@
                </div>
                 <div class="layui-row layui-col-space10">
                     <div class="layui-col-md4">
-                        <div class="broadcast-window full-screen-side">
+                        <div class="broadcast-window full-screen-side bottom-height-target">
                             <div class="broadcast-screen">
                                 <img src="./images/onAir/beigao.png" alt="">
                             </div>
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="layui-col-md4">
-                        <div class="broadcast-window full-screen-side">
+                        <div class="broadcast-window full-screen-side bottom-height">
                             <div class="broadcast-screen">
                                 <img src="./images/onAir/guanzhong.png" alt="">
                             </div>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <div class="layui-col-md4">
-                        <div class="broadcast-window full-screen-side">
+                        <div class="broadcast-window full-screen-side bottom-height">
                             <div class="broadcast-screen">
                                 <img src="./images/onAir/beigao2.png" alt="">
                             </div>
@@ -188,8 +188,25 @@
 
 
 </div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="./libs/layui/layui.all.js"></script>
 <script>
+    $( document ).ready(function() {
+        equalheight();
+    });
+
+    $(window).resize(function() {
+        jQuery('.same-height-target').css('height','auto');
+        equalheight();
+    });
+    function equalheight(){
+        var topHeight = $(".same-height-target").height();
+        $(".same-height").height(topHeight);
+
+        var bottomHeight = $('.bottom-height-target').height();
+        $('.bottom-height').height(bottomHeight);
+
+    }
     //JavaScript代码区域
     layui.use('element', function(){
         var element = layui.element;

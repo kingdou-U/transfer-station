@@ -148,14 +148,25 @@ body{
   display: block;
   position: relative;
   overflow: hidden;
-  &.full-screen{
-    height: 510px;
-  }
+  //&.full-screen{
+  //  height: 510px;
+  //}
   &.full-screen-side{
-    height: 250px;
-    &.mb-10{
-      margin-bottom: 10px;
+    //height: 250px;
+    height:50%;
+    box-sizing: border-box;
+    img{
+      height:100%;
     }
+    &:first-child{
+      padding-bottom: 5px;
+    }
+    &:last-child{
+      padding-top: 5px;
+    }
+    //&.mb-10{
+    //  margin-bottom: 10px;
+    //}
   }
   .top-tag{
     position: absolute;

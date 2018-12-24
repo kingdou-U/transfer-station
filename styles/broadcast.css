@@ -158,14 +158,19 @@ body {
   position: relative;
   overflow: hidden;
 }
-.broadcast-window.full-screen {
-  height: 510px;
-}
 .broadcast-window.full-screen-side {
-  height: 250px;
+  height: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.broadcast-window.full-screen-side.mb-10 {
-  margin-bottom: 10px;
+.broadcast-window.full-screen-side img {
+  height: 100%;
+}
+.broadcast-window.full-screen-side:first-child {
+  padding-bottom: 5px;
+}
+.broadcast-window.full-screen-side:last-child {
+  padding-top: 5px;
 }
 .broadcast-window .top-tag {
   position: absolute;
