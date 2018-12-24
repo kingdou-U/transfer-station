@@ -6,7 +6,7 @@ function distributeChart(){
             bottom: 0,
             left: 'center',
             data: ['行政公益', '危害国家安全','刑事案件','重大责任事故','职务犯罪'],
-            textStyle:{color:'#c4c0ff',padding:[0,15]}
+            textStyle:{color:'#c4c0ff',padding:[0,10]}
         },
         series : [
             {
@@ -36,7 +36,7 @@ function distributeChart(){
                             color: '#0d8dff',
                             fontSize:11,
                         },
-                        padding:5,
+                        padding:2,
                         backgroundColor: 'rgba(5,124,254,0.3)',
                         borderColor: '#057cfe',
                         borderWidth: 1,
@@ -44,15 +44,14 @@ function distributeChart(){
                         rich: {
                             per: {
                                 color: '#0d8dff',
-                                fontSize:18,
+                                fontSize:16,
                                 fontWeight:'bold',
-                                lineHeight: 18,
                                 align: 'center'
                             },
                             b: {
-                                fontSize: 14,
+                                fontSize: 12,
                                 color:'#0d8dff',
-                                lineHeight: 28
+                                lineHeight:16
                             },
 
                         }
@@ -83,8 +82,8 @@ function distributeChart(){
             }
         ]
     };
-    var myChart = echarts.init(document.getElementById('distributeChart'));
-    myChart.setOption(option);
+    distributeChart= echarts.init(document.getElementById('distributeChart'));
+    distributeChart.setOption(option);
 }
 
 // 案件处理情况图
@@ -98,7 +97,7 @@ function dealStation(){
                 label: {
                     backgroundColor: '#6a7985'
                 }
-            }
+            },
         },
         legend: {
             textStyle:{color:'#aaa7e1',fontSize:11},
@@ -108,9 +107,9 @@ function dealStation(){
         },
         grid: {
             left: '3%',
-            right: '4%',
+            right: '6%',
             bottom: '10%',
-            containLabel: true,
+            containLabel: false,
             borderColor:'#0090fb'
         },
         xAxis : [
@@ -129,9 +128,12 @@ function dealStation(){
         ],
         yAxis : [
             {
-                type:'value',
-                name:'案件数',
+                name:'',
+                axisLabel:{
+                  show:false
+                },
                 axisLine:{
+                    show:true,
                     lineStyle: {color:'#0090fb'}
                 },
                 splitLine:{
@@ -140,10 +142,10 @@ function dealStation(){
                 },
             },
             {
-                type:'value',
                 name:'百分比',
                 min:0,
                 max:100,
+                show:false,
                 axisLabel: {
                     formatter: '{value} %'
                 },
@@ -156,6 +158,7 @@ function dealStation(){
                 },
             }
         ],
+      
         series : [
             {
                 name:'结案数',
@@ -207,8 +210,9 @@ function dealStation(){
             }
         ]
     };
-    var myChart = echarts.init(document.getElementById('caseDeal'));
-    myChart.setOption(option);
+     caseDeal = echarts.init(document.getElementById('caseDeal'));
+    caseDeal.setOption(option);
+
 }
 
 // 趋势对比图
@@ -264,6 +268,15 @@ function trendChart(){
                 },
             }
         ],
+        dataZoom:[
+            {
+                type: 'inside',
+                show: true,
+                xAxisIndex: [0],
+                start: 0,//默认为1
+                end: 50
+            },
+        ],
         series : [
             {
                 name:'2018',
@@ -294,8 +307,8 @@ function trendChart(){
             },
         ]
     };
-    var myChart = echarts.init(document.getElementById('trend'));
-    myChart.setOption(option);
+     caseTrend = echarts.init(document.getElementById('trend'));
+    caseTrend.setOption(option);
 }
 
 // 绵阳市案件分布图
@@ -417,11 +430,9 @@ function drawGraph(){
                 zlevel: 6,
                 data: convertData(data),
             },
-
-
         ]
     };
-    var myChart = echarts.init(document.getElementById('graphChart'));
-    myChart.setOption(option);
+    graphChart = echarts.init(document.getElementById('graphChart'));
+    graphChart.setOption(option);
 }
 

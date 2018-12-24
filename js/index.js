@@ -16,6 +16,13 @@ dealStation();
 trendChart();
 // 绵阳地图
 drawGraph();
+
+window.onresize=function(){
+    distributeChart.resize();
+    caseDeal.resize();
+    caseTrend.resize();
+    graphChart.resize();
+}
 function scrollBlock(el,firstChild){
     var $scrollLists = $(el);
     var timer = null;
