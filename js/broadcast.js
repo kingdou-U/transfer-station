@@ -12,10 +12,34 @@ function equalheight(){
     var bottomHeight = $('.bottom-height-target').height();
     $('.bottom-height').height(bottomHeight);
 }
+// 发送文字消息
+function showText (chatText) {
+    if(chatText.length<=0) return;
+    var chatBox='<div class="say-box I-say">' +
+        '<p class="chat-name">张大厨-18112341234</p>' +
+        '<div class="chat-content">' +
+        '<p class="chat-text">'+chatText+'</p>' +
+        '</div></div>';
+    $('.chat-history').append(chatBox);
+    $('.chat-history').scrollTop($('.chat-history').get(0).scrollHeight)
+}
+
+function showImage (base64Image) {
+    var chatBox='<div class="say-box I-say">' +
+        '<p class="chat-name">张大厨-18112341234</p>' +
+        '<div class="chat-content">' +
+        '<div class="chat-file">' +
+        '<div class="file-content">' +
+        '<img src="./images/file-chat.png" alt="">' +
+        '<p class="file-name">'+fileName+'</p>' +
+        '</div>' +
+        '<a class="down-file" href="##">下载</a>' +
+        '</div></div></div>';
+    $('.chat-history').append(chatBox);
+}
 
 //播放声音
 $(".chat-voice").on('click',function(){
-
     var audioTag = $(this).find('audio').get(0);
     var audioBg = $(this).find('.voice-bg');
     audioTag.play();
@@ -28,20 +52,24 @@ $(".chat-voice").on('click',function(){
 // 文字输入
 $('.sendBtn').on('click',function(){
     var chatText = $(this).closest('.chat-input').find('textarea').val();
-    if(chatText.length<=0) return;
-    var chatBox='<div class="say-box I-say">' +
-        '<p class="chat-name">张大厨-18112341234</p>' +
-        '<div class="chat-content">' +
-        '<p class="chat-text">'+chatText+'</p>' +
-        '</div></div>';
-    $('.chat-history').append(chatBox);
+    showText (chatText);
     $(this).closest('.chat-input').find('textarea').val('');
-    $('.chat-history').scrollTop($('.chat-history').get(0).scrollHeight)
 });
 // 文件输入
 $('.file-btn').on('change','input',function(){
     var file = this.files[0];
     var fileName = file.name;
+    var reg = /[(.jpg)(.png)(.git)]$/;
+    if (reg.test (fileName)) {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function (evt) {
+            var base64Image = evt.target.result;
+
+        }
+    } else {
+
+    }
 
     var chatBox='<div class="say-box I-say">' +
         '<p class="chat-name">张大厨-18112341234</p>' +
@@ -73,7 +101,7 @@ $('.fullScreen').on('click',function(){
 });
 
 // 详情展示
-$('.total-btn').on('click',function(){
+$('.detail-btn').on('click',function(){
     var layer = layui.layer;
     var html = $('.info-lists').get(0).outerHTML;
     var index = layer.open({
