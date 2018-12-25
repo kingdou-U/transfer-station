@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>绵阳市公诉智能出庭指挥系统</title>
     <link rel="stylesheet" href="./libs/layui/css/layui.css">
+    <link rel="stylesheet" href="./libs/contextMenu/jquery.contextMenu.min.css">
     <link rel="stylesheet" href="./styles/broadcast.css">
 </head>
 <body class="layui-layout-body">
@@ -66,7 +67,7 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">成都市(15)</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">武侯区(5)</a></dd>
+                        <dd><a  href="javascript:;">武侯区(5)</a></dd>
                         <dd><a href="javascript:;">成华区(5)</a></dd>
                         <dd><a href="javascript:;">双流县(5)</a></dd>
                     </dl>
@@ -225,12 +226,47 @@
         </div>
     </div>
 
-
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="./libs/layui/layui.all.js"></script>
 <script src="./js/chat.js"></script>
 <script src="./js/broadcast.js"></script>
+<script src="./libs/contextMenu/jquery.contextMenu.min.js"></script>
+<script>
+    function requestFullScreen(element) {
+        var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+        if (requestMethod) {
+            requestMethod.call(element);
+        } else if (typeof window.ActiveXObject !== "undefined") {
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript !== null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+    }
+
+
+    $('.layui-nav-child').contextMenu({
+        selector: 'dd',
+        callback: function(key, options) {
+            //点击进入观摩模式后
+            var layer = layui.layer;
+            var index = layer.open({
+                title:'',
+                type: 2,
+                area: ['420px', '640px'], //宽高
+                closeBtn: 0, //不显示close按钮
+                content: './onAir.html',
+            });
+            equalheight();
+            layer.full(index);
+            window.requestFullScreen(document.documentElement)
+        },
+        items: {
+            "play": {name: "进入观摩模式"},
+        }
+    });
+</script>
 
 </body>
 </html>

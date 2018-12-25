@@ -213,7 +213,7 @@ body {
 }
 .chat-room .chat-panel .chat-history {
   border-bottom: 1px solid #00b2c9;
-  height: 300px;
+  height: 350px;
   overflow-y: auto;
 }
 .chat-room .chat-panel .say-box {
@@ -382,7 +382,7 @@ body {
     padding-right: 73px;
   }
   .chat-room .chat-panel .chat-history {
-    height: 250px;
+    height: 350px;
   }
   .chat-room .chat-panel .chat-member {
     width: 75px;
@@ -407,12 +407,19 @@ body {
   position: relative;
 }
 .case-info .info-lists li {
-  list-style: circle inside;
   line-height: 1.5em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 96%;
+}
+.case-info .info-lists li:before {
+  content: "*";
+  display: inline-block;
+  color: #00b2c9;
+  font-size: 16px;
+  margin-right: 10px;
+  transform: translateY(5px);
 }
 .case-info .detail-btn {
   position: absolute;
@@ -448,4 +455,7 @@ body {
 .layui-layer-content .info-lists li {
   white-space: normal;
   padding: 4px 0;
+}
+.layui-layout-admin .layui-body {
+  bottom: 0;
 }
