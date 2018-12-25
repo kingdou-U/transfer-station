@@ -71,3 +71,15 @@ $('.fullScreen').on('click',function(){
     equalheight();
     layer.full(index);
 });
+
+// 详情展示
+$('.total-btn').on('click',function(){
+    var layer = layui.layer;
+    var html = $('.info-lists').get(0).outerHTML;
+    var index = layer.open({
+        title:'案件详情',
+        type:1,
+        area:['500px','400px'],
+        content:html
+    })
+});
