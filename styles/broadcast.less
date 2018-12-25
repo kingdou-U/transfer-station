@@ -4,14 +4,18 @@ body{
 /*自适应*/
 @noteWidth:1400px;
 @NoteBook:~"screen and (max-width:@{noteWidth})";
-
+.layui-nav-tree .layui-nav-bar {
+  width: 5px;
+  height: 0;
+  background-color: #5e4dff;
+}
 .layui-layout-admin{
   .layui-header{
     background: #5e4dff;
     height: 70px;
     .logOut{
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
     }
     .top-search{
       background: #4b3be1;
@@ -143,16 +147,14 @@ body{
   padding: 4px 10px;
   border-radius: 4px;
   outline: none;
+  cursor:pointer;
 }
 .broadcast-window{
   display: block;
   position: relative;
+  //height:100%;
   overflow: hidden;
-  //&.full-screen{
-  //  height: 510px;
-  //}
   &.full-screen-side{
-    //height: 250px;
     height:50%;
     box-sizing: border-box;
     img{
@@ -181,6 +183,8 @@ body{
     padding: 0 15px;
     text-align: center;
     border-bottom-right-radius: 8px;
+    cursor:pointer;
+    user-select: none;
   }
   .broadcast-tag{
     font-size:12px;
@@ -219,17 +223,114 @@ body{
     .chat-history{
       border-bottom: 1px solid #00b2c9;
       height: 300px;
+      overflow-y:auto;
+    }
+    .say-box{
+      padding: 4px 10px;
+      &.other-say{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .chat-content{
+          border-bottom-right-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+        }
+      }
+      &.I-say{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .chat-content{
+          border-bottom-left-radius: 20px;
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+      .chat-content{
+        padding: 5px 0;
+        overflow:hidden;
+        .chat-text{
+          font-size: 12px;
+          padding: 2px 8px;
+          background:#1c1d56;
+        }
+        .chat-file{
+          background:#1c1d56;
+          .file-content{
+            padding: 8px;
+            display: flex;
+            align-items:center;
+            img{
+              width:25px;
+              height: 25px;
+              margin-right: 5px;
+            }
+          }
+          .down-file{
+            display: block;
+            color: #6dd5ff;
+            background: #2e267e;
+            text-align: center;
+          }
+        }
+        .chat-voice{
+            width: 100px;
+            height: 31px;
+            background-image: linear-gradient(0deg,#6056fe 0%,#00b2c9 100%),linear-gradient(#e9e9e9, #e9e9e9);
+            background-blend-mode: normal,normal;
+            border-radius: 15px 0px 10px 15px;
+            opacity: 0.8;
+            position: relative;
+          .voice-bg{
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 13px;
+            &.playing{
+              animation:playingNow 1s infinite linear;
+            }
+            @keyframes playingNow {
+              from{
+                opacity: 0;
+              }
+              to{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .chat-name{
+        font-size:12px;
+      }
     }
     .chat-other{
       border-bottom: 1px solid #00b2c9;
       padding: 8px 20px;
       button{
+        cursor:pointer;
         margin-right: 20px;
         background: transparent;
         border: none;
         outline: none;
+        position: relative;
         img{
           height: 22px;
+        }
+        &.file-btn{
+          input{
+            opacity: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -288,7 +389,7 @@ body{
     .chat-panel {
       padding-right: 73px;
       .chat-history{
-        height:200px;
+        height:250px;
       }
       .chat-member{
         width:75px;
@@ -333,5 +434,37 @@ body{
     bottom: 8px;
     right: 10px;
 
+  }
+}
+
+::-webkit-scrollbar
+{
+  width: 5px;
+  height: 10px;
+  background-color: transparent;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  //-webkit-box-shadow: inset 0 0 6px #00f7ff;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  //-webkit-box-shadow: inset 0 0 6px #00f7ff;
+  background-color: #5e4dff;
+}
+
+.broadcast-video-iframe{
+  width:100%;
+  box-sizing: border-box;
+  padding: 10px;
+  .full-screen{
+    height: 100%;
   }
 }

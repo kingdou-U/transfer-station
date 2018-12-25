@@ -85,11 +85,11 @@
     <div class="layui-body">
         <!-- 内容主体区域 -->
         <div class="layui-row layui-col-space10 ">
-            <div class="layui-col-md9">
+            <div class="broadcast-video layui-col-md9">
                <div class="layui-row layui-col-space10 clearfix">
                    <div class="layui-col-md8 same-height same-height-target">
                        <div class="broadcast-window full-screen">
-                           <span class="top-tag">六屏显示</span>
+                           <span class="fullScreen top-tag">六屏显示</span>
                            <div class="broadcast-screen">
                                <img src="./images/onAir/full.png" alt="">
                            </div>
@@ -113,7 +113,7 @@
                </div>
                 <div class="layui-row layui-col-space10">
                     <div class="layui-col-md4">
-                        <div class="broadcast-window full-screen-side bottom-height-target">
+                        <div class="broadcast-window full-screen-side bottom-height bottom-height-target">
                             <div class="broadcast-screen">
                                 <img src="./images/onAir/beigao.png" alt="">
                             </div>
@@ -145,14 +145,47 @@
                     </div>
                     <div class="chat-panel">
                         <div class="chat-box">
-                            <div class="chat-history"></div>
+                            <div class="chat-history">
+                                <div class="say-box other-say">
+                                    <p class="chat-name">常大厨-18112341234</p>
+                                    <div class="chat-content">
+                                        <p class="chat-text">开始庭审大会123456789</p>
+                                    </div>
+                                </div>
+                                <div class="say-box I-say">
+                                    <p class="chat-name">张大厨-18112341234</p>
+                                    <div class="chat-content">
+                                       <div class="chat-voice">
+                                           <img class="voice-bg" src="./images/voice.png" alt="">
+                                           <audio src="./libs/voice.mp3">
+                                               您的浏览器不支持 audio 标签。
+                                           </audio>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="say-box other-say">
+                                    <p class="chat-name">常大厨-18112341234</p>
+                                    <div class="chat-content">
+                                        <div class="chat-file">
+                                            <div class="file-content">
+                                                <img src="./images/file-chat.png" alt="">
+                                                <p class="file-name">未导入.xlsx</p>
+                                            </div>
+                                            <a class="down-file" href="##">下载</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="chat-other">
-                                <button><img src="./images/speech.png" alt=""></button>
-                                <button><img src="./images/call.png" alt=""></button>
-                                <button><img src="./images/file.png" alt=""></button>
+                                <button class="speech-btn"><img src="./images/speech.png" alt=""></button>
+                                <button class="call-btn"><img src="./images/call.png" alt=""></button>
+                                <button class="file-btn">
+                                    <img src="./images/file.png" alt="">
+                                    <input id="file-input" type="file">
+                                </button>
                             </div>
                             <div class="chat-input">
-                                <textarea ></textarea>
+                                <textarea></textarea>
                                 <button class="sendBtn total-btn">发送</button>
                             </div>
                         </div>
@@ -190,28 +223,7 @@
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="./libs/layui/layui.all.js"></script>
-<script>
-    $( document ).ready(function() {
-        equalheight();
-    });
+<script src="./js/broadcast.js"></script>
 
-    $(window).resize(function() {
-        jQuery('.same-height-target').css('height','auto');
-        equalheight();
-    });
-    function equalheight(){
-        var topHeight = $(".same-height-target").height();
-        $(".same-height").height(topHeight);
-
-        var bottomHeight = $('.bottom-height-target').height();
-        $('.bottom-height').height(bottomHeight);
-
-    }
-    //JavaScript代码区域
-    layui.use('element', function(){
-        var element = layui.element;
-
-    });
-</script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绵阳市公诉智能出庭指挥系统</title>
+    <link rel="stylesheet" href="./libs/layui/css/layui.css">
+    <link rel="stylesheet" href="./styles/broadcast.css">
+</head>
+<body>
+<div class="broadcast-video-iframe">
+    <div class="layui-row layui-col-space10 clearfix">
+        <div class="layui-col-md8 same-height same-height-target">
+            <div class="broadcast-window full-screen">
+                <span class="fullScreen top-tag">小屏显示</span>
+                <div class="broadcast-screen">
+                    <img src="./images/onAir/full.png" alt="">
+                </div>
+                <div class="broadcast-tag">全屏</div>
+            </div>
+        </div>
+        <div class="layui-col-md4 same-height">
+            <div class="broadcast-window full-screen-side mb-10">
+                <div class="broadcast-screen">
+                    <img src="./images/onAir/faguan.png" alt="">
+                </div>
+                <div class="broadcast-tag">法官</div>
+            </div>
+            <div class="broadcast-window full-screen-side">
+                <div class="broadcast-screen">
+                    <img src="./images/onAir/gongsuren.png" alt="">
+                </div>
+                <div class="broadcast-tag">公诉人</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md4">
+            <div class="broadcast-window full-screen-side bottom-height bottom-height-target">
+                <div class="broadcast-screen">
+                    <img src="./images/onAir/beigao.png" alt="">
+                </div>
+                <div class="broadcast-tag">被告</div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="broadcast-window full-screen-side bottom-height">
+                <div class="broadcast-screen">
+                    <img src="./images/onAir/guanzhong.png" alt="">
+                </div>
+                <div class="broadcast-tag">观众席</div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="broadcast-window full-screen-side bottom-height">
+                <div class="broadcast-screen">
+                    <img src="./images/onAir/beigao2.png" alt="">
+                </div>
+                <div class="broadcast-tag">被告</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="./libs/layui/layui.all.js"></script>
+<!--<script src="./js/broadcast.js"></script>-->
+<script>
+    function equalheight(){
+        var height = window.screen.height;
+        var topHeight = (height/3)*2;
+        var bottomHeight = height/3;
+        $('.same-height').height(topHeight);
+        $('.bottom-height').height(bottomHeight);
+    }
+    equalheight();
+    $('.top-tag').on('click',function(){
+        //当你在iframe页面关闭自身时
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    })
+</script>
+</body>
+</html>
